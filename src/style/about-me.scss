@@ -1,0 +1,18 @@
+@import "./utilities";
+
+#about{
+  @extend %flex-container-column;
+  padding-top: 200px;
+}
+
+#about article {
+  @extend %flex-container-row;
+}
+
+#about img {
+  height: 500px;
+}
+
+#about h2{
+  align-self:flex-start;
+}

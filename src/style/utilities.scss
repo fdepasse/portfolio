@@ -1,0 +1,25 @@
+$green: #60654a;
+$orange: #ff7c00;
+$off-white: #fbf7f5;
+$dark-grey: #333333;
+$light-grey: #777777;
+
+%bold-font {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+%light-font {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+%flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-container-column {
+  display: flex;
+  flex-direction: column;
+}

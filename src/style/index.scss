@@ -1,23 +1,24 @@
 @import-normalize;
-
-$green: #60654A;
-$orange: #FF7C00;
-$off-white: #FBF7F5;
-$dark-grey: #333333;
-$light-grey: #777777;
-
+@import "./utilities.scss";
+@import "./navbar.scss";
+@import "./about-me.scss";
 
 * {
-  font-family: 'Raleway', sans-serif;
-  color: $green;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.title-font {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+body {
+  @extend %flex-container-column;
+  height: 100%;
 }
 
-.content-font {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+section {
+  height: 100vh;
+}
+
+#timeline,
+#skills {
+  background-color: $off-white;
 }

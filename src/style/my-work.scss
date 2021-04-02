@@ -1,0 +1,24 @@
+@import "./utilities";
+
+#mywork {
+  .sub-section {
+    @extend %flex-container-row;
+  }
+
+  article {
+    @extend %flex-container-column;
+  }
+
+  figure {
+    @extend %flex-container-column;
+  }
+
+  nav {
+    @extend %flex-container-row;
+    justify-content: center;
+
+    a {
+      color: black;
+    }
+  }
+}

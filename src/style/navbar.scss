@@ -1,6 +1,6 @@
 @import "./utilities";
 
-nav {
+#navbar {
   @extend %flex-container-row;
   background-color: black;
   padding: 30px;
@@ -8,25 +8,15 @@ nav {
   top: 0;
   width: 100%;
   justify-content: center;
-}
 
-nav a {
-  @extend %bold-font;
-  text-decoration: none;
-  color: white;
-  padding: 0 2%;
-}
+  a {
+    @extend %bold-font;
+    text-decoration: none;
+    color: white;
+    padding: 0 2%;
 
-nav a:hover {
-  color: $orange;
-  font-size: 20px;
-}
-
-nav i{
-  color: white;
-  padding: 0 2%;
-}
-
-nav i:hover {
-  color: $orange;
+    &:hover {
+      color: $orange;
+    }
+  }
 }

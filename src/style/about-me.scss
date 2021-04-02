@@ -1,18 +1,31 @@
 @import "./utilities";
 
-#about{
-  @extend %flex-container-column;
-  padding-top: 200px;
-}
+#about {
+  .sub-section {
+    @extend %flex-container-row;
+    justify-content: space-between;
+  }
 
-#about article {
-  @extend %flex-container-row;
-}
+  article {
+    @extend %flex-container-column;
+    height: 100%;
+    padding-right: 50px;
+  }
 
-#about img {
-  height: 500px;
-}
+  h3 {
+    padding-top: 50px;
+    text-align: justify;
+    font-size: 30px;
+    color: $dark-grey;
+  }
 
-#about h2{
-  align-self:flex-start;
+  p {
+    padding-top: 50px;
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  img {
+    height: 100%;
+  }
 }

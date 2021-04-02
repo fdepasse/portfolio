@@ -13,15 +13,15 @@ function MyWork() {
         <p>{project.description}</p>
         <nav>
           <a href={project.url} target='blank'>
-            <i className='fa fa-link fa-lg' aria-label='link to project'></i>
+            <i className='fa fa-link fa-2x' aria-label='link to project'></i>
           </a>
           <a href={project.github} target='blank'>
-            <i className='fa fa-github fa-lg' aria-label='link to github'></i>
+            <i className='fa fa-github fa-2x' aria-label='link to github'></i>
           </a>
         </nav>
       </article>
       <figure>
-          <img src={project.image} alt='carousel'/>
+        <img src={project.image} alt='carousel' />
         <CarouselButton project={project} setProject={setProject} />
       </figure>
     </section>

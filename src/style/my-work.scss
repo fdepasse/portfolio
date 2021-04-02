@@ -1,12 +1,26 @@
 @import "./utilities";
 
 #mywork {
+
   .sub-section {
     @extend %flex-container-row;
   }
 
   article {
     @extend %flex-container-column;
+  }
+
+  h3 {
+    padding-top: 50px;
+    text-align: justify;
+    font-size: 30px;
+    color: $dark-grey;
+  }
+
+  p {
+    padding-top: 50px;
+    text-align: justify;
+    font-size: 20px;
   }
 
   figure {
@@ -16,9 +30,11 @@
   nav {
     @extend %flex-container-row;
     justify-content: center;
+    padding-top: 50px;
 
     a {
       color: black;
+      padding: 0 30px;
     }
   }
 }

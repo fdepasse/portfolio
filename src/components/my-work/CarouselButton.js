@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '../../content/text/text'
+import { projects } from '../../content/data/data'
 
 
 function handleClick(event, setProject){

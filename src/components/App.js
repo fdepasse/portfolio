@@ -3,7 +3,7 @@ import AboutMe from './AboutMe'
 import Contact from './Contact'
 import MyWork from './my-work/MyWork'
 import NavBar from './NavBar'
-import Skills from './Skills'
+import Skills from './skills/Skills'
 import Timeline from './Timeline'
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { intro, aboutMe } from '../content/text/text'
+import { intro, aboutMe } from '../content/data/data'
 import profile from '../content/images/profile-picture.jpg'
 
 function AboutMe() {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CarouselButton from './CarouselButton'
-import { defaultProject } from '../../content/text/text'
+import { defaultProject } from '../../content/data/data'
 
 function MyWork() {
   const [project, setProject] = useState(defaultProject)
@@ -21,7 +21,7 @@ function MyWork() {
         </nav>
       </article>
       <figure>
-        <img src={project.image} alt='carousel' />
+        <img src={project.image} alt='carousel showing projects' />
         <CarouselButton project={project} setProject={setProject} />
       </figure>
     </section>

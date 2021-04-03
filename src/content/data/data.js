@@ -2,11 +2,17 @@ import pacmanGif from '../images/pac-man-thriller.gif'
 import breakingbadGif from '../images/breaking-bad.gif'
 import hackasnackGif from '../images/hack-a-snack.gif'
 import dreamlandGif from '../images/dreamland.gif'
+import { SiHtml5, SiCss3, SiJavascript, SiSass, SiNodeDotJs, SiPython, SiFlask, SiMongodb, SiPostgresql, SiWebpack, SiJest, SiMocha, SiReact } from 'react-icons/si'
 
+
+// ! About Me
 export const intro = 'I am a Junior Developer who used to be a Senior Business Analyst in a large corporation for 8 years.'
+
 
 export const aboutMe = 'From here, I enrolled in an Immersive Software Engineering Course to follow my passion for solving problems and to express my creativity by building useful and great looking applications. My career has been driven by my desire to learn, as demonstrated each time I moved on to a new role in my previous company. Today, I am looking at joining a team of developers where I can collaboratively work on projects and learn from my peers.'
 
+
+// ! My Work
 export const projects = [
   {
     id: 1,
@@ -43,3 +49,94 @@ export const projects = [
 ]
 
 export const defaultProject = projects[0]
+
+
+// ! Skills
+
+const Express = () => <i className="devicon-express-original"></i>
+
+export const skills = [
+  {
+    id: 'Confident',
+    tech: [
+      {
+        name: 'HTML',
+        icon: <SiHtml5 />
+      },
+      {
+        name: 'CSS',
+        icon: <SiCss3 />
+      },
+      {
+        name: 'JavaScript',
+        icon: <SiJavascript />
+      },
+      {
+        name: 'React',
+        icon: <SiReact />
+      },
+      {
+        name: 'Sass',
+        icon: <SiSass />
+      },
+      {
+        name: 'Node.js',
+        icon: <SiNodeDotJs />
+      }
+    ]
+  },
+  {
+    id: 'Comfortable',
+    tech: [
+      {
+        name: 'Python',
+        icon: <SiPython />
+      },
+      {
+        name: 'Flask',
+        icon: <SiFlask />
+      },
+      {
+        name: 'PostgreSQL',
+        icon: <SiPostgresql />
+      },
+      {
+        name: 'Express',
+        icon: <Express />
+      },
+      {
+        name: 'MongoDB',
+        icon: <SiMongodb />
+      }
+    ]
+  },
+  {
+    id: 'Beginner',
+    tech: [
+      {
+        name: 'Webpack',
+        icon: <SiWebpack />
+      },
+      {
+        name: 'Jest',
+        icon: <SiJest />
+      },
+      {
+        name: 'Mocha',
+        icon: <SiMocha />
+      },
+      {
+        name: 'Chai',
+        icon: ''
+      },
+      {
+        name: 'Supertest',
+        icon: ''
+      },
+      {
+        name: 'Pytest',
+        icon: ''
+      }
+    ]
+  }
+]

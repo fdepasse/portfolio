@@ -13,11 +13,11 @@
       @extend %flex-container-column;
       align-items: center;
 
-      ul {
+      #list {
         @extend %flex-container-row;
         @extend %bold-font;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         border-radius: 50%;
         background-color: $dark-grey;
@@ -25,24 +25,20 @@
         height: 400px;
         list-style: none;
         padding: 0;
-        color: $orange;
 
-        li{
-          padding: 0 30px;
+        .skill {
+          @extend %flex-container-column;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px;
+          color: $orange;
+          &:hover {
+            color: white;
+          }
 
-          .skill{
-            @extend %flex-container-column;
-            justify-content: center;
-            align-items: center;
-            font-size: 50px;
-            &:hover{
-              color: white;
-            }
-
-            span{
-              padding-top: 5px;
-              font-size: 15px;
-            }
+          figcaption {
+            padding-top: 5px;
+            font-size: 15px;
           }
         }
       }

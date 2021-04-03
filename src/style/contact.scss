@@ -1,0 +1,17 @@
+@import "./utilities";
+
+#contact {
+  .sub-section {
+    @extend %flex-container-column;
+  }
+
+  .container {
+    @extend %flex-container-row;
+    justify-content: space-between;
+
+    div {
+      @extend %flex-container-column;
+    }
+
+  }
+}

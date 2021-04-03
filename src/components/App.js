@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutMe from './AboutMe'
-import Contact from './Contact'
+import Contact from './contact/Contact'
 import MyWork from './my-work/MyWork'
 import NavBar from './NavBar'
 import Skills from './skills/Skills'

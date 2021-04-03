@@ -1,0 +1,8 @@
+{
+  "forms": {
+    "emailForm": {
+      "name": "Email Form",
+      "actions": [{ "type": "email", "to": "depasse.fabien@gmail.com" }]
+    }
+  }
+}

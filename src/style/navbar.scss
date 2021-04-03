@@ -1,20 +1,27 @@
 @import "./utilities";
 
-#navbar {
-  @extend %flex-container-row;
-  background-color: black;
-  padding: 30px;
+
+header{
+  @extend %flex-container-column;
+  height: 70px;
   position: fixed;
   top: 0;
   width: 100%;
   justify-content: center;
+  align-items: center;
+  background-color:black;
+}
+
+#navbar {
+  @extend %flex-container-row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 
   a {
     @extend %bold-font;
     text-decoration: none;
     color: white;
-    padding: 0 2%;
-
     &:hover {
       color: $orange;
     }

@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @extend %flex-container-column;
   height: 100vh;
@@ -50,14 +54,14 @@ body {
   }
 }
 
-.heading{
+.heading {
   text-align: justify;
   font-size: 23px;
   color: $dark-grey;
   line-height: 150%;
 }
 
-.content{
+.content {
   text-align: justify;
   font-size: 18px;
   line-height: 150%;

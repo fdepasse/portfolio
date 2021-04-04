@@ -1,7 +1,6 @@
 @import "./utilities";
 
-
-header{
+header {
   @extend %flex-container-column;
   height: 70px;
   position: fixed;
@@ -9,7 +8,13 @@ header{
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color:black;
+  background-color: black;
+  animation: header-appear 1.2s ease;
+
+  @keyframes header-appear {
+    0% {height: 0px}
+    100% {height: 70px}
+  }
 }
 
 #navbar {
@@ -22,8 +27,16 @@ header{
     @extend %bold-font;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+    animation: nav-appear 1.2s ease;
+
     &:hover {
       color: $orange;
+    }
+
+    @keyframes nav-appear {
+      0% {color: transparent}
+      100% {color: white}
     }
   }
 }

@@ -67,6 +67,7 @@
         border: $orange 1px solid;
         border-radius: 10px;
         background-color: $orange;
+        transition: 0.3s;
         &:hover {
           background-color: white;
           border: white 1px solid;
@@ -83,6 +84,7 @@
       a {
         color: $dark-grey;
         padding: 0 30px;
+        transition: 0.3s;
         &:hover {
           color: $orange;
         }

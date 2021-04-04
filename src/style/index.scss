@@ -1,13 +1,13 @@
 @import-normalize;
-@import './utilities.scss';
-@import './navbar.scss';
-@import './about-me.scss';
-@import './my-work.scss';
-@import './skills.scss';
-@import './contact.scss';
+@import "./utilities.scss";
+@import "./navbar.scss";
+@import "./about-me.scss";
+@import "./my-work.scss";
+@import "./skills.scss";
+@import "./contact.scss";
 
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   margin: 0;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .section {
-  @extend %flex-container-row;
+  @extend %flex-container-column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -27,6 +27,8 @@ body {
 }
 
 .sub-section {
+  @extend %flex-container-column;
+  justify-content: center;
   height: 60%;
   width: 50%;
 }
@@ -40,12 +42,24 @@ body {
   @extend %bold-font;
   font-size: 60px;
   color: $green;
-
   &:after {
-    content: '';
+    content: "";
     display: block;
     width: 100px;
     border-bottom: 5px solid $orange;
     padding: 5px;
   }
+}
+
+.heading{
+  text-align: justify;
+  font-size: 23px;
+  color: $dark-grey;
+  line-height: 150%;
+}
+
+.content{
+  text-align: justify;
+  font-size: 18px;
+  line-height: 150%;
 }

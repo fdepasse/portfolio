@@ -1,40 +1,71 @@
 @import "./utilities";
 
 #mywork {
-
-  .sub-section {
+  .container {
     @extend %flex-container-row;
+    justify-content: space-between;
+    height: 100%;
+    padding: 60px 0px 150px 0;
+
   }
 
   article {
     @extend %flex-container-column;
-  }
+    justify-content: space-between;
+    width: 35%;
 
-  h3 {
-    padding-top: 50px;
-    text-align: justify;
-    font-size: 30px;
-    color: $dark-grey;
-  }
+    nav {
+      @extend %flex-container-row;
+      justify-content: center;
+      align-items: center;
+      padding-top: 60px;
 
-  p {
-    padding-top: 50px;
-    text-align: justify;
-    font-size: 20px;
+      figure {
+        @extend %flex-container-column;
+        @extend %bold-font;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        font-size: 15px;
+        color: $dark-grey;
+
+        a {
+          color: $dark-grey;
+        }
+
+        figcaption {
+          padding-top: 5px;
+          font-size: 15px;
+        }
+      }
+    }
   }
 
   figure {
     @extend %flex-container-column;
-  }
+    justify-content: space-between;
 
-  nav {
-    @extend %flex-container-row;
-    justify-content: center;
-    padding-top: 50px;
+    img {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 1%;
+      border: $light-grey solid 1px;;
+    }
 
-    a {
-      color: black;
-      padding: 0 30px;
+    nav {
+      @extend %flex-container-row;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        color: transparent;
+        border: none;
+        border-radius: 50%;
+        background-color: $dark-grey;
+        margin: 0 10px;
+        &:hover {
+          background-color: $orange;
+        }
+      }
     }
   }
 }

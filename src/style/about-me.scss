@@ -1,31 +1,22 @@
 @import "./utilities";
 
 #about {
-  .sub-section {
+  .container {
     @extend %flex-container-row;
     justify-content: space-between;
   }
 
   article {
     @extend %flex-container-column;
-    height: 100%;
-    padding-right: 50px;
-  }
-
-  h3 {
-    padding-top: 50px;
-    text-align: justify;
-    font-size: 30px;
-    color: $dark-grey;
-  }
-
-  p {
-    padding-top: 50px;
-    text-align: justify;
-    font-size: 20px;
+    justify-content: space-evenly;
+    width: 50%;
   }
 
   img {
-    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: $light-grey solid 1px;
+    border-radius: 5%;
+    width: 40%;
+    height: auto;
   }
 }

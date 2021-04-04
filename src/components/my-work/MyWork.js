@@ -8,8 +8,11 @@ function MyWork() {
 
   return <section id='mywork' className='section'>
     <section className='sub-section'>
-      <Project project={project}/>
-      <Carousel project={project} setProject={setProject} />
+      <h2 className='title'>MY WORK</h2>
+      <section className='container'>
+        <Project project={project} />
+        <Carousel project={project} setProject={setProject} />
+      </section>
     </section>
   </section>
 }

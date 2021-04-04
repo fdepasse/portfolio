@@ -6,10 +6,14 @@ import { SiHtml5, SiCss3, SiJavascript, SiSass, SiNodeDotJs, SiPython, SiFlask, 
 
 
 // ! About Me
-export const intro = 'I am a Junior Developer who used to be a Senior Business Analyst in a large corporation for 8 years.'
+export const intro = 'I am a Junior Developer based in London who enjoys solving problems and creating useful great looking apps.'
 
 
-export const aboutMe = 'From here, I enrolled in an Immersive Software Engineering Course to follow my passion for solving problems and to express my creativity by building useful and great looking applications. My career has been driven by my desire to learn, as demonstrated each time I moved on to a new role in my previous company. Today, I am looking at joining a team of developers where I can collaboratively work on projects and learn from my peers.'
+export const aboutMe = 'I used to be a Senior Business Analyst and, after 8 years in my previous company, I wanted to learn new skills, follow my passion for problem solving and express my creativity. After completing a few online tutorials out of curiosity, I found myself a passion for coding, so I decided to enroll in a Software Engineering Immersive Course.' 
+
+export const mySkills = 'After 12 intense weeks, I can create frontend applications using HTML, CSS, JavaScript and React. I also have backend experience and can build Node.js - Express and Python - Flask apps talking to MongoDB or PostgreSQL databases.'
+
+export const hobbies = 'When I don\'t code, you\'ll find me playing football, running marathons or for fun, driving a virtual F1 car, cooking and travelling (when safe to do so!).'
 
 
 // ! My Work

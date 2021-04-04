@@ -1,6 +1,6 @@
 import React from 'react'
-import { intro, aboutMe, hobbies, mySkills } from '../content/data/data'
-import profile from '../content/images/profile-picture.jpg'
+import { intro, aboutMe, hobbies, mySkills } from '../../content/data/data'
+import profile from '../../content/images/profile-picture.jpg'
 
 function AboutMe() {
   return <section id='about' className='section'>

@@ -28,7 +28,6 @@ body {
 
 .sub-section {
   @extend %flex-container-column;
-  justify-content: center;
   height: 60%;
   width: 50%;
 }

@@ -1,17 +1,19 @@
 @import "./utilities";
 
 #skills {
-  .sub-section {
-    @extend %flex-container-column;
-  }
-
   #skills-list {
     @extend %flex-container-row;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
 
     article {
       @extend %flex-container-column;
       align-items: center;
+
+      h3 {
+        padding: 0 0 20px 0;
+      }
 
       #list {
         @extend %flex-container-row;
@@ -19,17 +21,18 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        border-radius: 50%;
+        border-radius: 10px;
         background-color: $dark-grey;
-        width: 400px;
+        width: 300px;
         height: 400px;
         list-style: none;
-        padding: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
         .skill {
           @extend %flex-container-column;
           justify-content: center;
           align-items: center;
+          padding: 0 30px;
           font-size: 50px;
           color: $orange;
           &:hover {

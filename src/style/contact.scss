@@ -8,10 +8,85 @@
   .container {
     @extend %flex-container-row;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 
-    div {
-      @extend %flex-container-column;
+    h3 {
+      padding: 0 0 50px 0;
     }
 
+    #form {
+      @extend %flex-container-column;
+      height: 75%;
+      width: 50%;
+
+      form {
+        @extend %flex-container-column;
+        height: 100%;
+        background-color: $dark-grey;
+        border-radius: 2%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 25px;
+      }
+
+      label {
+        @extend %bold-font;
+        padding: 0 0 10px 0;
+        color: $orange;
+      }
+
+      input {
+        height: 30px;
+        width: 50%;
+        margin: 0 0 25px 0;
+        border: $dark-grey solid 1px;
+        border-radius: 10px;
+        &:focus{
+        outline: none;
+        border: $orange solid 1px;
+        }
+      }
+
+      textarea {
+        width: 80%;
+        height: 200px;
+        margin: 0 0 25px 0;
+        border-radius: 10px;
+        &:focus{
+          outline: none;
+          border: $orange solid 1px;
+          }
+      }
+
+      button {
+        @extend %bold-font;
+        font-size: 18px;
+        width: 25%;
+        height: 40px;
+        color: $dark-grey;
+        border: $orange 1px solid;
+        border-radius: 10px;
+        background-color: $orange;
+        &:hover {
+          background-color: white;
+          border: white 1px solid;
+        }
+      }
+    }
+
+    #contact-links {
+      @extend %flex-container-column;
+      align-items: center;
+      height: 75%;
+      width: 50%;
+
+      a {
+        color: $dark-grey;
+        padding: 0 30px;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
   }
 }

@@ -4,19 +4,21 @@
   .container {
     @extend %flex-container-row;
     justify-content: space-between;
+    height: 100%;
   }
 
   article {
     @extend %flex-container-column;
     justify-content: space-evenly;
     width: 50%;
+    height: 100%;
   }
 
   img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: $light-grey solid 1px;
-    border-radius: 5%;
-    width: 40%;
-    height: auto;
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
   }
 }

@@ -12,8 +12,12 @@ header {
   animation: header-appear 1.2s ease;
 
   @keyframes header-appear {
-    0% {height: 0px}
-    100% {height: 70px}
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 70px;
+    }
   }
 }
 
@@ -34,9 +38,17 @@ header {
       color: $orange;
     }
 
+    .icon {
+      font-size: 25px;
+    }
+
     @keyframes nav-appear {
-      0% {color: transparent}
-      100% {color: white}
+      0% {
+        color: transparent;
+      }
+      100% {
+        color: white;
+      }
     }
   }
 }

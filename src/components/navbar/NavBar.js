@@ -1,4 +1,5 @@
 import React from 'react'
+import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si'
 
 
 function NavBar() {
@@ -10,13 +11,13 @@ function NavBar() {
       <a href='#skills'>SKILLS</a>
       <a href='#contact'>CONTACT</a>
       <a href='mailto:depasse.fabien@gmail.com' aria-label='link to send an email'>
-        <i className='fa fa-envelope fa-2x' aria-hidden='true'></i>
+        <SiGmail className='icon'/>
       </a>
       <a href='https://github.com/fdepasse' target='blank' aria-label='link to github profile'>
-        <i className='fa fa-github fa-2x' aria-hidden='true'></i>
+        <SiGithub className='icon'/>
       </a>
       <a href='https://www.linkedin.com/in/depassefabien/' target='blank' aria-label='link to linkedin profile'>
-        <i className='fa fa-linkedin-square fa-2x' aria-hidden='true'></i>
+        <SiLinkedin className='icon'/>
       </a>
     </nav>
   </header>

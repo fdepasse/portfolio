@@ -1,16 +1,19 @@
 import React from 'react'
+import { SiGithub } from 'react-icons/si'
+import { TiLinkOutline } from 'react-icons/ti'
+
 
 function ProjectLinks({ project }) {
   return <nav>
     <a href={project.url} target='blank'>
       <figure>
-        <i className='fa fa-link fa-2x' aria-label='link to project'></i>
+        <TiLinkOutline />
         <figcaption>URL</figcaption>
       </figure>
     </a>
     <a href={project.github} target='blank'>
       <figure>
-        <i className='fa fa-github fa-2x' aria-label='link to github'></i>
+        <SiGithub />
         <figcaption>README</figcaption>
       </figure>
     </a>

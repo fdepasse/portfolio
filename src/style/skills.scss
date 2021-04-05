@@ -26,7 +26,7 @@
         width: 300px;
         height: 400px;
         list-style: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
         .skill {
           @extend %flex-container-column;

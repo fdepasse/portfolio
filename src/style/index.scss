@@ -36,8 +36,8 @@ body {
   width: 50%;
 }
 
-#timeline,
-#skills {
+#mywork,
+#contact {
   background-color: $off-white;
 }
 
@@ -65,4 +65,28 @@ body {
   text-align: justify;
   font-size: 18px;
   line-height: 150%;
+}
+
+.appear-right{
+  animation: show-right 1s ease;
+  @keyframes show-right{
+    0% {transform: translateX(100vw)}
+    100% {transform: translateX(0vw)}
+  }
+}
+
+.appear-left{
+  animation: show-left 1s ease;
+  @keyframes show-left{
+    0% {transform: translateX(-100vw)}
+    100% {transform: translateX(0vw)}
+  }
+}
+
+.fade{
+  animation: fade 1s ease;
+  @keyframes fade{
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
 }

@@ -7,14 +7,17 @@ function handleClick(event, setProject) {
   setProject(projectClicked)
 }
 
-function CarouselButton({ setProject}) {
+function CarouselButton({ setProject, setFade, isActive, setIsActive }) {
   return <nav>
     {projects.map(project => {
       return <button key={project.id}
+        className={isActive && project.id === 1 ? 'is-active' : ''}
         onClick={(event) => {
           handleClick(event, setProject)
+          setFade(true)
+          setIsActive(false)
         }}
-      > {project.id}</button>
+      >{project.id}</button>
     })}
   </nav >
 }

@@ -22,7 +22,7 @@
       a {
         color: $dark-grey;
         padding: 0 30px;
-        font-size: 25px;
+        font-size: 50px;
         text-align: center;
         text-decoration: none;
         transition: 0.3s;
@@ -76,5 +76,9 @@
         }
       }
     }
+  }
+
+  .is-active {
+    background-color: $orange;
   }
 }

@@ -41,9 +41,9 @@
         margin: 0 0 25px 0;
         border: $dark-grey solid 1px;
         border-radius: 10px;
-        &:focus{
-        outline: none;
-        border: $orange solid 1px;
+        &:focus {
+          outline: none;
+          border: $orange solid 1px;
         }
       }
 
@@ -52,10 +52,10 @@
         height: 200px;
         margin: 0 0 25px 0;
         border-radius: 10px;
-        &:focus{
+        &:focus {
           outline: none;
           border: $orange solid 1px;
-          }
+        }
       }
 
       button {
@@ -71,12 +71,11 @@
         outline: none;
         &:hover {
           background-color: white;
-          border: white 1px solid;
         }
       }
     }
 
-    .form-message{
+    .form-message {
       @extend %bold-font;
       font-size: 18px;
       color: white;
@@ -91,12 +90,30 @@
       a {
         color: $dark-grey;
         padding: 0 30px;
-        font-size:50px;
+        font-size: 50px;
         transition: 0.3s;
         &:hover {
           color: $orange;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  #contact {
+    .sub-section {
+    height: 75%;
+    }
+
+    .container {
+      justify-content: space-between;
+      align-items:flex-start;
+
+      h3 {
+        padding: 5% 0;
+      }
+
     }
   }
 }

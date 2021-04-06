@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { ValidationError, useForm } from '@formspree/react'
-
 
 function Form() {
   const [state, handleSubmit] = useForm('emailForm')

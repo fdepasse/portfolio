@@ -3,8 +3,8 @@ import { SiGithub } from 'react-icons/si'
 import { TiLinkOutline } from 'react-icons/ti'
 
 
-function ProjectLinks({ project }) {
-  return <nav>
+function ProjectLinks({ project, fade }) {
+  return <nav className={fade ? 'fade' : ''}>
     <a href={project.url} target='blank'>
       <figure>
         <TiLinkOutline />

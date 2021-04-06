@@ -1,28 +1,30 @@
 @import "./utilities";
 
 #mywork {
+  .sub-section{
+    height: 80%;
+  }
   .container {
-    @extend %flex-container-row;
+    @extend %flex-container-column;
     justify-content: space-between;
+    padding: 5% 0 0 0;
     height: 100%;
-    padding: 60px 0px 150px 0;
   }
 
   article {
     @extend %flex-container-column;
     justify-content: space-between;
-    width: 35%;
 
     nav {
       @extend %flex-container-row;
-      justify-content: center;
       align-items: center;
-      padding-top: 60px;
+      justify-content: space-between;
+      width: 10%;
+      padding: 1% 0 0 0;
 
       a {
         color: $dark-grey;
-        padding: 0 30px;
-        font-size: 50px;
+        font-size: 200%;
         text-align: center;
         text-decoration: none;
         transition: 0.3s;
@@ -38,8 +40,8 @@
         align-items: center;
 
         figcaption {
-          padding-top: 5px;
-          font-size: 15px;
+          padding-top: 10%;
+          font-size: 40%;
         }
       }
     }
@@ -48,11 +50,15 @@
   figure {
     @extend %flex-container-column;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 5% 0 0 0;
 
     img {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       border: $light-grey solid 1px;
+      width: 80%;
     }
 
     nav {
@@ -65,7 +71,7 @@
         border: none;
         border-radius: 50%;
         background-color: $dark-grey;
-        margin: 0 10px;
+        margin: 0 10%;
         transition: 0.3s;
         &:hover {
           background-color: $orange;
@@ -80,5 +86,27 @@
 
   .is-active {
     background-color: $orange;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  #mywork {
+    .sub-section{
+      height: 75%;
+      width: 70%;
+    }
+    
+    .container {
+      padding: 2% 0 0 0;
+      height: 100%;
+    }
+
+    figure{
+      padding: 2% 0 0 0;
+
+      img{
+        width: 50%;
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from './Form'
+import Form2 from './Form'
 import SocialMedia from './SocialMedia'
 
 function Contact() {
@@ -7,7 +7,7 @@ function Contact() {
     <section className='sub-section'>
       <h2 className='title'>CONTACT</h2>
       <section className='container'>
-        <Form />
+        <Form2 />
         <SocialMedia />
       </section>
     </section>

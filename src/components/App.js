@@ -5,11 +5,10 @@ import Contact from './contact/Contact'
 import MyWork from './my-work/MyWork'
 import NavBar from './navbar/NavBar'
 import Skills from './skills/Skills'
-// import Timeline from './timeline/Timeline'
 
 function App() {
   return <FormspreeProvider project={process.env.PROJECT_ID}>
-    <NavBar />
+  <NavBar />
     <main>
       <AboutMe />
       {/* <Timeline /> */}
@@ -17,7 +16,7 @@ function App() {
       <Skills />
       <Contact />
     </main>
-  </FormspreeProvider>
+  </FormspreeProvider >
 }
 
 export default App

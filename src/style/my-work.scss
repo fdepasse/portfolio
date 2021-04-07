@@ -1,7 +1,7 @@
 @import "./utilities";
 
 #mywork {
-  .sub-section{
+  .sub-section {
     height: 80%;
   }
   .container {
@@ -24,7 +24,7 @@
 
       a {
         color: $dark-grey;
-        font-size: 200%;
+        font-size: 30px;
         text-align: center;
         text-decoration: none;
         transition: 0.3s;
@@ -41,7 +41,7 @@
 
         figcaption {
           padding-top: 10%;
-          font-size: 40%;
+          font-size: 14px;
         }
       }
     }
@@ -89,23 +89,69 @@
   }
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1440px) {
   #mywork {
-    .sub-section{
-      height: 75%;
-      width: 70%;
-    }
-    
     .container {
       padding: 2% 0 0 0;
-      height: 100%;
     }
 
-    figure{
-      padding: 2% 0 0 0;
+    article {
+      nav {
+        a {
+          font-size: 25px;
+          width: 60%;
+        }
+        figure {
+          figcaption {
+            font-size: 10px;
+          }
+        }
+      }
+    }
 
-      img{
-        width: 50%;
+    figure {
+      padding: 2.5% 0 0 0;
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #mywork {
+    .sub-section {
+      height: 70%;
+    }
+
+    figure {
+      height: 55%;
+      padding: 0;
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mywork {
+    .container {
+      padding: 5% 0 0 0;
+      article {
+        nav {
+          width: 20%;
+        }
+      }
+      figure {
+        height: 55%;
+        padding: 0;
+
+        img {
+          width: 100%;
+        }
       }
     }
   }

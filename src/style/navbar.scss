@@ -52,3 +52,35 @@ header {
     }
   }
 }
+
+@media only screen and (max-width: 1440px) {
+  #navbar {
+  width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header{
+    height: 50px;
+
+    @keyframes header-appear {
+      0% {
+        height: 0px;
+      }
+      100% {
+        height: 50px;
+      }
+    }
+  }
+  
+  #navbar {
+    a{
+      font-size: 14px;
+
+      .icon {
+        font-size: 20px;
+      }
+
+    }
+  }
+}

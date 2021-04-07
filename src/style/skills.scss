@@ -50,10 +50,67 @@
   }
 }
 
-@media only screen and (max-width: 2000px) {
+
+@media only screen and (max-width: 1440px) {
   #skills {
+    .sub-section {
+      height: 75%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #skills {
+    .sub-section {
+      height: 70%;
+    }
+
     #skills-list {
-      padding: 2% 0 0 0;
+      article {
+        width: 30%;
+
+        #list {
+          max-width: 100%;
+
+          .skill {
+            font-size: 35px;
+
+            figcaption {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #skills {
+    .sub-section {
+      #skills-list {
+        display: flex;
+        flex-direction: column;
+
+        article {
+          width: 100%;
+
+          h3{
+            align-self: flex-start;
+          }
+
+          #list {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+
+            .skill{
+              padding: 15px;
+            }
+          }
+        }
+      }
     }
   }
 }

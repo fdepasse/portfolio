@@ -156,3 +156,25 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #mywork {
+    .sub-section {
+      height: 80%;
+      width: 85%;
+
+      .container{
+
+        article{
+          nav{
+            width: 25%;
+          }
+        }
+
+        figure{
+          height: 40%;
+        }
+      }
+    }
+  }
+}

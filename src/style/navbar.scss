@@ -51,16 +51,20 @@ header {
       }
     }
   }
+
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
   #navbar {
-  width: 75%;
+    width: 75%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  header{
+  header {
     height: 50px;
 
     @keyframes header-appear {
@@ -72,15 +76,27 @@ header {
       }
     }
   }
-  
+
   #navbar {
-    a{
+    a {
       font-size: 14px;
 
       .icon {
         font-size: 20px;
       }
+    }
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  #navbar {
+    width: 85%;
+    a {
+      font-size: 12px;
+
+      .icon {
+        font-size: 12px;
+      }
     }
   }
 }

@@ -102,27 +102,52 @@
 
 @media only screen and (max-width: 768px) {
   #contact {
-      .sub-section{
-        height: 80%;
+    .sub-section {
+      height: 80%;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+
+      h3 {
+        padding: 0 0 5% 0;
       }
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+
+      #form {
         width: 100%;
+      }
 
-        h3{
-          padding: 0 0 2% 0;
-        }
+      #contact-links {
+        height: 0%;
+      }
+    }
+  }
+}
 
-        #form {
-          width: 100%;
-          // height: 95%;
+@media only screen and (max-width: 600px) {
+  #contact {
+    .sub-section {
+      height: 85%;
+      width: 85%;
+
+      .container {
+        justify-content: space-around;
+
+        #form{
+          height: 70%;
         }
 
         #contact-links {
-          height: 0%;
+        width: 100%;
+
+        a{
+          font-size: 30px;
+          padding: 15px;
+        }
         }
       }
+    }
   }
 }

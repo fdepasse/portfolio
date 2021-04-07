@@ -67,3 +67,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #about {
+    .sub-section {
+      height: 80%;
+      width: 85%;
+
+      .container{
+        height: 100%;
+        flex-direction: column-reverse;
+        padding: 10% 0 0 0;
+
+        article{
+          padding: 5% 0 0 0;
+          height: 75%;
+        }
+      }
+    }
+  }
+}

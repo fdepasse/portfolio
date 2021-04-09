@@ -13,7 +13,7 @@ function AboutMe() {
           <p className='content'>{mySkills}</p>
           <p className='content'>{hobbies}</p>
         </article>
-        <img src={profile} alt='fabien headshot' className='appear-right'/>
+        <img src={profile} alt='fabien headshot' className='appear-right' width='525' height='700' />
       </section>
     </section>
   </section>

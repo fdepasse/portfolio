@@ -2,10 +2,10 @@
 
 header {
   @extend %flex-container-column;
-  height: 70px;
+  height: 3rem;
+  width: 100vw;
   position: fixed;
   top: 0;
-  width: 100%;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -13,10 +13,10 @@ header {
 
   @keyframes header-appear {
     0% {
-      height: 0px;
+      height: 0rem;
     }
     100% {
-      height: 70px;
+      height: 3rem;
     }
   }
 }
@@ -25,78 +25,90 @@ header {
   @extend %flex-container-row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 90%;
+}
 
-  a {
-    @extend %bold-font;
-    text-decoration: none;
+#menu {
+  @extend %flex-container-column;
+  align-items: flex-start;
+
+  h6 {
     color: white;
-    transition: 0.3s;
-    animation: nav-appear 1.2s ease;
-
-    &:hover {
-      color: $orange;
-    }
-
-    .icon {
-      font-size: 25px;
-    }
-
-    @keyframes nav-appear {
-      0% {
-        color: transparent;
-      }
-      100% {
-        color: white;
-      }
-    }
+    font-size: 1em;
   }
 
-  .mobile-menu {
+  ul {
+    position: absolute;
+    top: 100%;
+    width: auto;
     display: none;
   }
-}
 
-@media only screen and (max-width: 1440px) {
-  #navbar {
-    width: 75%;
-  }
-}
+  .display-mobile-menu {
+    @extend %flex-container-column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
 
-@media only screen and (max-width: 768px) {
-  header {
-    height: 50px;
-
-    @keyframes header-appear {
-      0% {
-        height: 0px;
-      }
-      100% {
-        height: 50px;
-      }
-    }
-  }
-
-  #navbar {
-    a {
-      font-size: 14px;
-
-      .icon {
-        font-size: 20px;
-      }
+    li {
+      padding: 0.25em;
     }
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #navbar {
-    width: 85%;
-    a {
-      font-size: 12px;
+#links {
+  @extend %flex-container-row;
+  width: 35%;
 
-      .icon {
-        font-size: 12px;
-      }
+  ul {
+    @extend %flex-container-row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+}
+
+
+a, h6 {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  animation: nav-appear 1.2s ease;
+  &:hover {
+    color: $orange;
+  }
+  @keyframes nav-appear {
+    0% {
+      color: transparent;
+    }
+    100% {
+      color: white;
     }
   }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+span{
+  padding: 0 0 0 0.5em;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 0.2em 0.2em 0;
+  display: inline-block;
+  padding: 0.2em;
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+.right {
+  transform: rotate(-45deg);
 }

@@ -1,7 +1,6 @@
 @import "./utilities";
 
 #mywork {
-
   #mywork-sub-section {
     @extend %flex-container-column;
     height: 90%;
@@ -9,25 +8,63 @@
     align-items: center;
   }
 
-  .container{
+  .container {
     @extend %flex-container-column;
     align-items: center;
   }
 
-  article{
+  #project {
     @extend %flex-container-column;
   }
 
-  img {
-    max-width: 100%;
-    width: 40%;
-    height: auto;
-    align-self: center;
+  #project-links {
+    @extend %flex-container-column;
   }
-}
 
+  #project-links-nav {
+    align-self: center;
+    @extend %flex-container-row;
+    width: 50%;
+    justify-content: space-between;
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+    }
+
+    figcaption {
+      font-size: 1rem;
+    }
+  }
+
+  #project-tech-list {
+    align-self: center;
+    @extend %flex-container-row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+
+    figure {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    figcaption {
+      font-size: 1rem;
+    }
+  }
+
+  #project-carousel {
     img {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       border: $light-grey solid 1px;
-      width: 80%;
+      width: 100%;
     }
+  }
+}
+
+h4 {
+  color: $dark-grey;
+}

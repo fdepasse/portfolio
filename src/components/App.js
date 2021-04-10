@@ -1,5 +1,6 @@
 import React from 'react'
 import { FormspreeProvider } from '@formspree/react';
+import Home from './home/Home'
 import AboutMe from './about-me/AboutMe'
 import Contact from './contact/Contact'
 import MyWork from './my-work/MyWork'
@@ -8,10 +9,10 @@ import Skills from './skills/Skills'
 
 function App() {
   return <FormspreeProvider project={process.env.PROJECT_ID}>
-  <NavBar />
+    <NavBar />
     <main>
+      <Home />
       <AboutMe />
-      {/* <Timeline /> */}
       <MyWork />
       <Skills />
       <Contact />

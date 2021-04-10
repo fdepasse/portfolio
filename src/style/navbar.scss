@@ -19,7 +19,7 @@ header {
       height: 3rem;
     }
   }
-}
+
 
 #navbar {
   @extend %flex-container-row;
@@ -111,4 +111,6 @@ span{
 
 .right {
   transform: rotate(-45deg);
+}
+
 }

@@ -1,19 +1,34 @@
 import React from 'react'
-import { intro, aboutMe, hobbies, mySkills } from '../../content/data/data'
+import { who, code, learning, future, background } from '../../content/data/data'
 import profile from '../../content/images/profile-picture.jpg'
+
 
 function AboutMe() {
   return <section id='about' className='section'>
-    <section className='sub-section'>
-      <h2 className='title appear-left'>ABOUT ME</h2>
+    <section id='about-sub-section'>
+      <h2 className='title'>ABOUT ME</h2>
       <section className='container'>
-        <article className='appear-left'>
-          <h3 className='heading'>{intro}</h3>
-          <p className='content'>{aboutMe}</p>
-          <p className='content'>{mySkills}</p>
-          <p className='content'>{hobbies}</p>
+        <article>
+        <img src={profile} alt='fabien headshot' width='525' height='700' />
+          <h3 className='heading'>Who am I?</h3>
+          <p className='content'>{who}</p>
         </article>
-        <img src={profile} alt='fabien headshot' className='appear-right' width='525' height='700' />
+        <article>
+          <h3 className='heading'>Background</h3>
+          <p className='content'>{background}</p>
+        </article>
+        <article>
+          <h3 className='heading'>Code</h3>
+          <p className='content'>{code}</p>
+        </article>
+        <article>
+          <h3 className='heading'>Love learning</h3>
+          <p className='content'>{learning}</p>
+        </article>
+        <article>
+          <h3 className='heading'>Future focus</h3>
+          <p className='content'>{future}</p>
+        </article>
       </section>
     </section>
   </section>

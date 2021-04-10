@@ -9,7 +9,7 @@ function MyWork() {
   const [isActive, setIsActive] = useState(true)
 
   return <section id='mywork' className='section'>
-    <section className='sub-section'>
+    <section id='mywork-sub-section'>
       <h2 className='title'>MY WORK</h2>
       <section className='container'>
         <Project project={project} fade={fade} setFade={setFade}/>

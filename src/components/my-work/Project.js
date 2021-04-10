@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectLinks from './ProjectLinks'
+import Tech from './Tech'
 
 function Project({ project, fade }) {
   return <article>
@@ -8,6 +9,7 @@ function Project({ project, fade }) {
       <p className='content'>{project.description}</p>
     </div>
     <ProjectLinks project={project} fade={fade} />
+    <Tech project={project} fade={fade} />
   </article>
 }
 

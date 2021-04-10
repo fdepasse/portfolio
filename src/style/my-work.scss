@@ -1,180 +1,33 @@
 @import "./utilities";
 
 #mywork {
-  .sub-section {
-    height: 80%;
-  }
-  .container {
+
+  #mywork-sub-section {
     @extend %flex-container-column;
-    justify-content: space-between;
-    padding: 5% 0 0 0;
-    height: 100%;
-  }
-
-  article {
-    @extend %flex-container-column;
-    justify-content: space-between;
-
-    nav {
-      @extend %flex-container-row;
-      align-items: center;
-      justify-content: space-between;
-      width: 10%;
-      padding: 1% 0 0 0;
-
-      a {
-        color: $dark-grey;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: none;
-        transition: 0.3s;
-        &:hover {
-          color: $orange;
-        }
-      }
-
-      figure {
-        @extend %flex-container-column;
-        @extend %bold-font;
-        justify-content: center;
-        align-items: center;
-
-        figcaption {
-          padding-top: 10%;
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
-  figure {
-    @extend %flex-container-column;
-    justify-content: space-between;
+    height: 90%;
+    width: 90%;
     align-items: center;
-    height: 100%;
-    padding: 5% 0 0 0;
+  }
+
+  .container{
+    @extend %flex-container-column;
+    align-items: center;
+  }
+
+  article{
+    @extend %flex-container-column;
+  }
+
+  img {
+    max-width: 100%;
+    width: 40%;
+    height: auto;
+    align-self: center;
+  }
+}
 
     img {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
       border: $light-grey solid 1px;
       width: 80%;
     }
-
-    nav {
-      @extend %flex-container-row;
-      justify-content: center;
-      align-items: center;
-
-      button {
-        color: transparent;
-        border: none;
-        border-radius: 50%;
-        background-color: $dark-grey;
-        margin: 0 10%;
-        transition: 0.3s;
-        &:hover {
-          background-color: $orange;
-        }
-        &:focus {
-          outline: none;
-          background-color: $orange;
-        }
-      }
-    }
-  }
-
-  .is-active {
-    background-color: $orange;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  #mywork {
-    .container {
-      padding: 2% 0 0 0;
-    }
-
-    article {
-      nav {
-        a {
-          font-size: 25px;
-          width: 60%;
-        }
-        figure {
-          figcaption {
-            font-size: 10px;
-          }
-        }
-      }
-    }
-
-    figure {
-      padding: 2.5% 0 0 0;
-
-      img {
-        width: 60%;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  #mywork {
-    .sub-section {
-      height: 70%;
-    }
-
-    figure {
-      height: 55%;
-      padding: 0;
-
-      img {
-        width: 60%;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #mywork {
-    .container {
-      padding: 5% 0 0 0;
-      article {
-        nav {
-          width: 20%;
-        }
-      }
-      figure {
-        height: 55%;
-        padding: 0;
-
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #mywork {
-    .sub-section {
-      height: 80%;
-      width: 85%;
-
-      .container{
-
-        article{
-          nav{
-            width: 25%;
-          }
-        }
-
-        figure{
-          height: 40%;
-        }
-      }
-    }
-  }
-}

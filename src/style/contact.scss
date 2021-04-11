@@ -1,3 +1,74 @@
+@import "./utilities";
+
+#contact {
+  background-color: $dark-grey;
+
+  #contact-sub-section {
+    @extend %flex-container-column;
+    height: 90%;
+    width: 90%;
+    align-items: center;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .container {
+    @extend %flex-container-column;
+    align-items: center;
+    width: 100%;
+  }
+
+  form {
+    @extend %flex-container-column;
+    padding: 1.5rem 0 0 0;
+    width: 100%;
+
+    input, textarea {
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 0 0 0.5rem 0;
+      border: none;
+      outline: none;
+    }
+
+    input{
+      padding: 0.5rem 0;
+    }
+
+    textarea{
+      height: 6rem;
+    }
+
+    input[placeholder], textarea[placeholder] {
+      color: white;
+      font-size: 1rem;
+    }
+
+    button{
+      @extend %bold-font;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      width: 30%;
+      outline: none;
+      background-color: transparent;
+      color: white;
+      border: 0.1rem solid white;
+      &:hover{
+      background-color: white;
+      color: $dark-grey;
+      }
+    }
+
+    .form-message{
+      @extend %bold-font;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      color: white;
+    }
+  }
+}
+
 // @import "./utilities";
 
 // #contact {

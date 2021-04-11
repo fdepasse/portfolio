@@ -1,14 +1,12 @@
 import React from 'react'
-import Form2 from './Form'
-import SocialMedia from './SocialMedia'
+import Form from './Form'
 
 function Contact() {
   return <section id='contact' className='section'>
-    <section className='sub-section'>
+    <section id='contact-sub-section'>
       <h2 className='title'>CONTACT</h2>
       <section className='container'>
-        <Form2 />
-        <SocialMedia />
+        <Form />
       </section>
     </section>
   </section>

@@ -1,9 +1,7 @@
 @import "./utilities";
 
-#about {
-  background-color: $off-white;
-
-  #about-sub-section {
+#interests {
+  #interests-sub-section {
     @extend %flex-container-column;
     height: 90%;
     width: 90%;
@@ -20,19 +18,27 @@
     padding: 1.5rem 0 0 0;
   }
 
-  h3{
+  h3 {
     padding: 0.5rem 0 0 0;
   }
 
-  img {
-    max-width: 100%;
-    width: 40%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  a {
+    text-decoration: none;
   }
 
-  svg {
-    font-size: 1.5em;
+  .interest-url {
+    @extend %flex-container-row;
+    align-items: flex-end;
+    font-size: 1.5rem;
     color: $dark-grey;
+    transition: 0.3s;
+    &:hover {
+      color: $orange;
+    }
+
+    figcaption {
+      @extend %bold-font;
+      font-size: 1rem;
+    }
   }
 }

@@ -1,6 +1,7 @@
 @import "./utilities";
 
 #mywork {
+
   #mywork-sub-section {
     @extend %flex-container-column;
     height: 90%;
@@ -15,10 +16,37 @@
 
   #project {
     @extend %flex-container-column;
+    padding: 1.5rem 0 0 0;
+    height: 23rem;
+  }
+
+  #project-tech {
+    padding: 0.5rem 0 0 0;
+  }
+
+  #project-tech-list {
+    align-self: center;
+    @extend %flex-container-row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5rem 0 0 0;
+    
+    figure {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+
+    figcaption {
+      font-size: 1rem;
+    }
   }
 
   #project-links {
     @extend %flex-container-column;
+    padding: 0.5rem 0 0 0;
+
   }
 
   #project-links-nav {
@@ -26,6 +54,7 @@
     @extend %flex-container-row;
     width: 50%;
     justify-content: space-between;
+    padding: 0.5rem 0 0 0;
 
     a {
       text-align: center;
@@ -39,32 +68,39 @@
     }
   }
 
-  #project-tech-list {
-    align-self: center;
-    @extend %flex-container-row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-
-    figure {
-      text-align: center;
-      font-size: 1.5rem;
-    }
-
-    figcaption {
-      font-size: 1rem;
-    }
-  }
-
   #project-carousel {
+    padding: 1rem 0 0 0;
     img {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       border: $light-grey solid 1px;
       width: 100%;
     }
+
+    h4 {
+      color: $dark-grey;
+    }
+  }
+
+  #project-buttons-nav{
+    @extend %flex-container-row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 0 0 0;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 0.2em 0.2em 0;
+    display: inline-block;
+    padding: 0.2em;
+  }
+
+  .left {
+    transform: rotate(135deg);
+  }
+
+  .right {
+    transform: rotate(-45deg);
   }
 }
 
-h4 {
-  color: $dark-grey;
-}

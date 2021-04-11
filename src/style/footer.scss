@@ -1,0 +1,39 @@
+@import "./utilities";
+
+footer {
+  @extend %flex-container-column;
+  width: 100vw;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  nav {
+    @extend %flex-container-row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+
+    a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+      font-size: 1.3rem;
+      padding: 0 1.5rem;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 0.2em 0.2em 0;
+    display: inline-block;
+    padding: 0.2em;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+  }
+}

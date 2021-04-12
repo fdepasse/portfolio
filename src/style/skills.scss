@@ -1,7 +1,6 @@
 @import "./utilities";
 
 #skills {
-  background-color: $off-white;
 
   #skills-sub-section {
     @extend %flex-container-column;

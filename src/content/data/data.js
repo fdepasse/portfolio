@@ -13,6 +13,7 @@ const Express = () => <i className="devicon-express-original"></i>
 // ! About Me
 export const who = {
   heading: 'Who am I?',
+  name: 'who',
   image: profile,
   content: 'I am a Junior Developer based in London, with a passion for problem solving. I am driven, tenacious, detailed and aim to come up with solutions as optimised as possible.'
 }
@@ -20,21 +21,25 @@ export const who = {
 export const aboutMe = [
   {
     heading: 'Background',
+    name: 'background',
     image: <RiHistoryLine />,
     content: 'I’ve spent the last 8 years as a Senior Data Analyst for a large company managing 1000+ SKU’s . Having optimised and improved our reporting tools to max efficiency, I sought to challenge myself. My curiosity took me to free online coding and in January 2021 I undertook a 3 month Software Engineering immersive course.'
   },
   {
     heading: 'Code',
+    name: 'code',
     image: <RiCodeSSlashLine />,
     content: 'I love logic, it’s at the core of how I work.  Whilst I particularly gravitate to Javascript and Python, I take an overall approach to ensure frontend and backend work seamlessly together.'
   },
   {
     heading: 'Love Learning',
+    name: 'love-learning',
     image: <ImBook />,
     content: 'For this website, I didn’t  use a styling framework  so I could challenge my new skills. I don’t like to leave  black boxes in my learning and seek to understand the why. I read newsletters and browse tutorials to keep up with trends and implement new features on my projects.'
   },
   {
     heading: 'Future Focus',
+    name: 'future-focus',
     image: <FaForward />,
     content: 'I’m strengthening my understanding of building full stack applications and configuring projects with tools such as Webpack.  At the moment I am working on a full stack web app to organise football games between friends.'
   }

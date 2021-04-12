@@ -10,6 +10,7 @@ header {
   align-items: center;
   background-color: black;
   animation: header-appear 1.2s ease;
+  z-index: 1;
 
   @keyframes header-appear {
     0% {
@@ -46,7 +47,6 @@ header {
 
   .display-mobile-menu {
     @extend %flex-container-column;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
 
     li {

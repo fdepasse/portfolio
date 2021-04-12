@@ -8,14 +8,14 @@ function displayProject(handleClick, setProject) {
   setProject(projectClicked)
 }
 
-export function PreviousButton({ setProject, setFade, slide, setSlide }) {
-  
+export function PreviousButton({ setProject, slide, setSlide, setSwipeLeft }) {
+
   function handleClick() {
     let newSlide = ''
-    if(slide - 1 < 1){
+    if (slide - 1 < 1) {
       newSlide = projects.length
     } else {
-      newSlide = slide - 1 
+      newSlide = slide - 1
     }
     setSlide(newSlide)
     return newSlide
@@ -23,8 +23,8 @@ export function PreviousButton({ setProject, setFade, slide, setSlide }) {
 
   return <div role='button' onClick={() => {
     displayProject(handleClick, setProject)
-    setFade(true)
-    }}>
+    setSwipeLeft(true)
+  }}>
     <span>
       <i className='arrow left'></i>
     </span>
@@ -33,14 +33,14 @@ export function PreviousButton({ setProject, setFade, slide, setSlide }) {
 }
 
 
-export function NextButton({ setProject, setFade, slide, setSlide }) {
+export function NextButton({ setProject, slide, setSlide, setSwipeRight }) {
 
   function handleClick() {
     let newSlide = ''
-    if(slide + 1 > projects.length){
+    if (slide + 1 > projects.length) {
       newSlide = 1
     } else {
-      newSlide = slide + 1 
+      newSlide = slide + 1
     }
     setSlide(newSlide)
     return newSlide
@@ -48,8 +48,8 @@ export function NextButton({ setProject, setFade, slide, setSlide }) {
 
   return <div role='button' onClick={() => {
     displayProject(handleClick, setProject)
-    setFade(true)
-    }}>
+    setSwipeRight(true)
+  }}>
     Next
     <span>
       <i className='arrow right'></i>

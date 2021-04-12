@@ -1,6 +1,8 @@
 @import "./utilities";
 
 #interests {
+  background-color: $off-white;
+
   #interests-sub-section {
     @extend %flex-container-column;
     height: 90%;
@@ -15,7 +17,7 @@
 
   article {
     @extend %flex-container-column;
-    padding: 1.5rem 0 0 0;
+    padding: 2.5rem 0 0 0;
   }
 
   h3 {

@@ -1,7 +1,6 @@
 @import "./utilities";
 
 #about {
-  background-color: $off-white;
 
   #about-sub-section {
     @extend %flex-container-column;
@@ -17,11 +16,11 @@
 
   article {
     @extend %flex-container-column;
-    padding: 1.5rem 0 0 0;
+    padding: 2.5rem 0 0 0;
   }
 
   h3{
-    padding: 0.5rem 0 0 0;
+    padding: 1rem 0 0 0;
   }
 
   img {
@@ -29,10 +28,12 @@
     width: 40%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    align-self: center;
   }
 
   svg {
     font-size: 1.5em;
     color: $dark-grey;
   }
+
 }

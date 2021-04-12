@@ -7,6 +7,7 @@ function Home() {
       <h2 className='appear-right'>Junior Developer</h2>
       <a href='#about'className='appear-left'><i className='arrow down'></i></a>
     </section>
+    <span id='credits'>Photo by <a href="https://unsplash.com/@bundo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank' rel='noreferrer'>Bundo Kim</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "target='_blank' rel='noreferrer'>Unsplash</a></span>
   </section>
 }
 

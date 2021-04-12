@@ -29,7 +29,7 @@ body {
   @extend %flex-container-column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
 
 .title {
@@ -84,14 +84,26 @@ body {
   }
 }
 
-.fade {
-  animation: fade 0.3s ease-in;
-  @keyframes fade {
+.swipe-right {
+  animation: swipe-right 0.55s ease-in;
+  @keyframes swipe-right {
     0% {
-      opacity: 0;
+      transform: translateX(100vw);
     }
     100% {
-      opacity: 1;
+      transform: translateX(0vw);
+    }
+  }
+}
+
+.swipe-left {
+  animation: swipe-left 0.55s ease-in;
+  @keyframes swipe-left {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(0vw);
     }
   }
 }

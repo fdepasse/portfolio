@@ -2,7 +2,7 @@
 
 header {
   @extend %flex-container-column;
-  height: 3rem;
+  height: 3.5rem;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -57,12 +57,15 @@ header {
 
 #links {
   @extend %flex-container-row;
-  width: 35%;
 
   ul {
     @extend %flex-container-row;
     justify-content: space-between;
     width: 100%;
+  }
+
+  li{
+    padding: 0 0 0 1rem;
   }
 
   .icon {
@@ -111,6 +114,10 @@ span{
 
 .right {
   transform: rotate(-45deg);
+}
+
+.hidden{
+  display: none;
 }
 
 }

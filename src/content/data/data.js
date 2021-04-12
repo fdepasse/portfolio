@@ -186,5 +186,12 @@ export const interests = [
     content: 'I find cooking really relaxing and I enjoy sharing meals with friends. I like Asian flavours in particular and, from time to time, take cooking lessons at the School of Wok.',
     caption:'School of Wok',
     url:'https://schoolofwok.co.uk/?gclid=CjwKCAjwvMqDBhB8EiwA2iSmPLxZbYtilH-wEoWijAblty-YTxE8shMdbXhvxydIOMquVEldBilPXhoCNxsQAvD_BwE'
+  },
+  {
+    heading: 'Formula 1',
+    name: 'formula-1',
+    content: 'I follow Formula 1 closely and play video game. "Drive to Survive" is one of the best sports documentary I watched.',
+    caption:'Drive to Survive',
+    url:'https://www.youtube.com/watch?v=aViLtXEtgqs'
   }
 ]

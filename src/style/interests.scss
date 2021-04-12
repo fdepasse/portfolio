@@ -11,7 +11,8 @@
   }
 
   .container {
-    @extend %flex-container-column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -41,6 +42,23 @@
     figcaption {
       @extend %bold-font;
       font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #interests {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    article {
+      width: 25ch;
     }
   }
 }

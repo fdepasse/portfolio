@@ -24,28 +24,31 @@
     @extend %flex-container-column;
     padding: 1.5rem 0 0 0;
     width: 100%;
+    max-width: 60ch;
 
-    input, textarea {
+    input,
+    textarea {
       background-color: rgba(0, 0, 0, 0.2);
       margin: 0 0 0.5rem 0;
       border: none;
       outline: none;
     }
 
-    input{
+    input {
       padding: 0.5rem 0;
     }
 
-    textarea{
+    textarea {
       height: 6rem;
     }
 
-    input[placeholder], textarea[placeholder] {
+    input[placeholder],
+    textarea[placeholder] {
       color: white;
       font-size: 1rem;
     }
 
-    button{
+    button {
       @extend %bold-font;
       font-size: 1rem;
       padding: 0.5rem 0;
@@ -54,17 +57,25 @@
       background-color: transparent;
       color: white;
       border: 0.1rem solid white;
-      &:hover{
-      background-color: white;
-      color: $dark-grey;
+      &:hover {
+        background-color: white;
+        color: $dark-grey;
       }
     }
 
-    .form-message{
+    .form-message {
       @extend %bold-font;
       font-size: 1rem;
       padding: 0.5rem 0;
       color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #contact{
+    form{
+      width: 60ch;
     }
   }
 }

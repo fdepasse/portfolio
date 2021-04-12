@@ -53,12 +53,27 @@
       flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
-      justify-content: space-between;
+      justify-content: center;
       align-items: flex-start;
     }
 
     article {
-      width: 25ch;
+      width: 50%;
+      &:nth-child(odd){
+      padding-right: 5%;
+      }
+      &:nth-child(even){
+        padding-left: 5%;
+        }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #interests {
+    #interests-sub-section {
+      width: 70%;
     }
   }
 }

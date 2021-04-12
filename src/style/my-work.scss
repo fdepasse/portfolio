@@ -14,13 +14,14 @@
     align-items: center;
   }
 
-  #project {
+  #project-desc {
     @extend %flex-container-column;
     padding: 2.5rem 0 0 0;
   }
 
   #project-tech {
     padding: 2.5rem 0 0 0;
+    width: 100%;
 
     h4{
       padding: 0 0 1rem 0;
@@ -59,6 +60,7 @@
     background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 0.5rem 0 0 0;
+    width: 100%;
   }
 
   #project-links-nav {

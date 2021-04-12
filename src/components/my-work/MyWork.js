@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { defaultProject } from '../../content/data/data'
 import Carousel from './Carousel'
 import Project from './Project'
+import Tech from './Tech'
+import ProjectLinks from './ProjectLinks'
 
 function MyWork() {
   const [project, setProject] = useState(defaultProject)
@@ -13,8 +15,10 @@ function MyWork() {
     <section id='mywork-sub-section'>
       <h2 className='title'>MY WORK</h2>
       <section className='container'>
-        <Carousel project={project} setProject={setProject} slide={slide} setSlide={setSlide} swipeRight={swipeRight} setSwipeRight={setSwipeRight} swipeLeft={swipeLeft} setSwipeLeft={setSwipeLeft}/>
-        <Project project={project} swipeRight={swipeRight} swipeLeft={swipeLeft}/>
+        <Project project={project} swipeRight={swipeRight} swipeLeft={swipeLeft} />
+        <Carousel project={project} setProject={setProject} slide={slide} setSlide={setSlide} swipeRight={swipeRight} setSwipeRight={setSwipeRight} swipeLeft={swipeLeft} setSwipeLeft={setSwipeLeft} />
+        <Tech project={project} swipeRight={swipeRight} swipeLeft={swipeLeft} />
+        <ProjectLinks project={project} swipeRight={swipeRight} swipeLeft={swipeLeft} />
       </section>
     </section>
   </section>

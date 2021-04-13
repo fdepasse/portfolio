@@ -3,10 +3,10 @@ import ArticlesInterests from './ArticlesInterests'
 
 function Interests() {
   return <section id='interests' className='section'>
-    <section id='interests-sub-section'>
+    <section className='sub-section'>
       <h2 className='title'>INTERESTS</h2>
-      <section className='container'>
-        <ArticlesInterests/>
+      <section id='articles-interests'>
+      <ArticlesInterests/>
       </section>
     </section>
   </section>

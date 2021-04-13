@@ -12,14 +12,12 @@ function MyWork() {
   const [swipeLeft, setSwipeLeft] = useState(false)
 
   return <section id='mywork' className='section'>
-    <section id='mywork-sub-section'>
+    <section className='sub-section'>
       <h2 className='title'>MY WORK</h2>
-      <section className='container'>
         <Project project={project} swipeRight={swipeRight} swipeLeft={swipeLeft} />
         <Carousel project={project} setProject={setProject} slide={slide} setSlide={setSlide} swipeRight={swipeRight} setSwipeRight={setSwipeRight} swipeLeft={swipeLeft} setSwipeLeft={setSwipeLeft} />
         <Tech project={project} swipeRight={swipeRight} swipeLeft={swipeLeft} />
         <ProjectLinks project={project} swipeRight={swipeRight} swipeLeft={swipeLeft} />
-      </section>
     </section>
   </section>
 }

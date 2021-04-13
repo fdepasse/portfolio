@@ -1,23 +1,10 @@
 @import "./utilities";
 
 #interests {
-  background-color: $off-white;
-
-  #interests-sub-section {
-    @extend %flex-container-column;
-    height: 90%;
-    width: 90%;
-    align-items: center;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   article {
-    @extend %flex-container-column;
+    display: flex;
+    flex-direction: column;
     padding: 2.5rem 0 0 0;
   }
 
@@ -30,7 +17,8 @@
   }
 
   .interest-url {
-    @extend %flex-container-row;
+    display: flex;
+    flex-direction: row;
     align-items: flex-end;
     font-size: 1.5rem;
     color: $dark-grey;

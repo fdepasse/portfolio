@@ -6,7 +6,6 @@ import Contact from './contact/Contact'
 import Footer from './footer/Footer'
 import MyWork from './my-work/MyWork'
 import NavBar from './navbar/NavBar'
-import Skills from './skills/Skills'
 import Interests from './interests/Interests';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Home />
       <AboutMe />
       <MyWork />
-      <Skills />
       <Interests/>
       <Contact />
     </main>

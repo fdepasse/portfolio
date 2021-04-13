@@ -3,7 +3,6 @@
 @import "./navbar.scss";
 @import "./about-me.scss";
 @import "./my-work.scss";
-@import "./skills.scss";
 @import "./contact.scss";
 @import "./home.scss";
 @import "./interests.scss";
@@ -20,16 +19,26 @@ html {
 }
 
 body {
-  @extend %flex-container-column;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
 
 .section {
-  @extend %flex-container-column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 100px 0;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 130ch;
 }
 
 .title {
@@ -37,6 +46,7 @@ body {
   font-size: 1.9rem;
   max-width: 60ch;
   color: black;
+  margin-bottom: 100px;
   &:after {
     content: "";
     display: block;
@@ -49,6 +59,13 @@ body {
 .heading {
   text-align: justify;
   font-size: 1.1rem;
+  color: black;
+  line-height: 150%;
+  max-width: 60ch;
+}
+
+.sub-heading {
+  text-align: justify;
   color: $dark-grey;
   line-height: 150%;
   max-width: 60ch;
@@ -107,3 +124,10 @@ body {
     }
   }
 }
+
+@media only screen and (min-width: 768px){
+  :root{
+    font-size: 110%;
+  }
+}
+

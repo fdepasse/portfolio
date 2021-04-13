@@ -2,26 +2,17 @@
 
 #mywork {
   background-color: $off-white;
-  #mywork-sub-section {
-    @extend %flex-container-column;
-    height: 90%;
-    width: 90%;
-    align-items: center;
-  }
-
-  .container {
-    @extend %flex-container-column;
-    align-items: center;
-  }
-
+  
   #project-desc {
-    @extend %flex-container-column;
+    display: flex;
+    flex-direction: column;
     padding: 2.5rem 0 0 0;
   }
 
   #project-tech {
     padding: 2.5rem 0 0 0;
     width: 100%;
+    max-width: 60ch;
 
     h4{
       padding: 0 0 1rem 0;
@@ -29,12 +20,14 @@
   }
 
   #project-tech-list {
+    display: flex;
+    flex-direction: row;
     align-self: center;
-    @extend %flex-container-row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 60ch;
     padding: 0.5rem 0 0 0;
     background-color: $dark-grey;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -56,19 +49,22 @@
   }
 
   #project-links {
-    @extend %flex-container-column;
+    display: flex;
+    flex-direction: column;
     background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 0.5rem 0 0 0;
     width: 100%;
+    max-width: 60ch;
   }
 
   #project-links-nav {
-    align-self: center;
-    @extend %flex-container-row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 50%;
-    justify-content: center;
+    align-self: center;
 
     a {
       text-align: center;
@@ -90,10 +86,12 @@
 
   #project-carousel {
     padding: 2.5rem 0 0 0;
+
     img {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       border: $light-grey solid 1px;
       width: 100%;
+      max-width: 60ch;
     }
 
     h4 {
@@ -102,7 +100,8 @@
   }
 
   #project-buttons-nav {
-    @extend %flex-container-row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     padding: 1rem 0 0 0;

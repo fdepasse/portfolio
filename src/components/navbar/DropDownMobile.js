@@ -8,7 +8,6 @@ function DropDownMobile({ menu, setMenu }) {
       <li><a href='#home' role='listitem'>Home</a></li>
       <li><a href='#about' role='listitem'>About me</a></li>
       <li><a href='#mywork' role='listitem'>My Work</a></li>
-      <li><a href='#skills' role='listitem'>Skills</a></li>
       <li><a href='#interests' role='listitem'>Interests</a></li>
       <li><a href='#contact' role='listitem'>Contact</a></li>
     </ul>

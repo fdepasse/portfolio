@@ -1,15 +1,19 @@
 import React from 'react'
 import ArticlesAboutMe from './ArticlesAboutMe'
 import Who from './Who'
+import Skills from './Skills'
 
 
 function AboutMe() {
   return <section id='about' className='section'>
-    <section id='about-sub-section'>
+    <section className='sub-section'>
       <h2 className='title'>ABOUT ME</h2>
-      <section className='container'>
+      <section id='who-skills'>
         <Who />
-        <ArticlesAboutMe/>
+        <Skills />
+      </section>
+      <section id='articles-about-me'>
+        <ArticlesAboutMe />
       </section>
     </section>
   </section>

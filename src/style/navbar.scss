@@ -1,7 +1,8 @@
 @import "./utilities";
 
 header {
-  @extend %flex-container-column;
+  display: flex;
+  flex-direction: column;
   height: 3.5rem;
   width: 100vw;
   position: fixed;
@@ -23,14 +24,17 @@ header {
 
 
 #navbar {
-  @extend %flex-container-row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 130ch;
 }
 
 #menu {
-  @extend %flex-container-column;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
 
   h6 {
@@ -46,7 +50,8 @@ header {
   }
 
   .mobile-menu {
-    @extend %flex-container-column;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
 
     li {
@@ -56,10 +61,12 @@ header {
 }
 
 #links {
-  @extend %flex-container-row;
+  display: flex;
+  flex-direction: row;
 
   ul {
-    @extend %flex-container-row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
   }

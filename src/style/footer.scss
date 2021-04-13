@@ -1,7 +1,8 @@
 @import "./utilities";
 
 footer {
-  @extend %flex-container-column;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 3.5rem;
   justify-content: center;
@@ -9,7 +10,8 @@ footer {
   background-color: black;
 
   nav {
-    @extend %flex-container-row;
+    display: flex;
+    flex-direction: row;
 
     a {
       text-decoration: none;

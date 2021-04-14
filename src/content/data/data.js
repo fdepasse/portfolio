@@ -190,7 +190,7 @@ export const interests = [
   {
     heading: 'Formula 1',
     name: 'formula-1',
-    content: 'I follow Formula 1 closely and play video game. "Drive to Survive" is one of the best sports documentary I watched.',
+    content: 'I follow Formula 1 closely and like to give a go at sim racing on the official video game. "Drive to Survive" is one of the best sports documentary I watched.',
     caption:'Drive to Survive',
     url:'https://www.youtube.com/watch?v=aViLtXEtgqs'
   }

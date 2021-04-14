@@ -8,7 +8,6 @@
     height: 30ch;
     max-width: 30ch;
 
-
     h3 {
       background-color: rgba(0, 0, 0, 0.6);
       color: white;
@@ -61,7 +60,6 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/football.jpeg");
     background-position: center;
     background-size: cover;
-    border-top-right-radius: 10px;
   }
 
   #running {
@@ -92,13 +90,6 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/formula-1.jpeg");
     background-position: center;
     background-size: cover;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-
-    h3 {
-      border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 10px;
-    }
   }
 
   .show-article {
@@ -117,58 +108,5 @@
     justify-content: center;
     width: 100%;
     max-width: 90ch;
-  }
-
-  #interests #football {
-    border-top-right-radius: 0;
-    h3 {
-      border-top-right-radius: 0;
-    }
-  }
-
-  #interests #running {
-    border-top-right-radius: 10px;
-  }
-
-  #interests #formula-1 {
-    border-bottom-left-radius: 0;
-    h3 {
-      border-bottom-left-radius: 0;
-    }
-  }
-
-  #interests #cooking {
-    border-bottom-left-radius: 10px;
-    h3 {
-      border-bottom-left-radius: 10px;
-    }
-  }
-}
-
-@media only screen and (min-width: 1077px) {
-  #interests #running {
-    border-top-right-radius: 0;
-    h3 {
-      border-top-right-radius: 0;
-    }
-  }
-
-  #interests #nike {
-    border-top-right-radius: 10px;
-  }
-
-  #interests #cooking {
-    border-bottom-left-radius: 0;
-    h3 {
-      border-bottom-left-radius: 0;
-    }
-  }
-
-  #interests #travelling {
-    border-bottom-left-radius: 10px;
-
-    h3 {
-      border-bottom-left-radius: 10px;
-    }
   }
 }

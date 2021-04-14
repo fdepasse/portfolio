@@ -6,16 +6,8 @@ function ArticlesInterests({ showArticle, setShowArticle }) {
 
   return interests.map(article => {
     return <article key={article.heading} id={article.name}
-      onMouseEnter={(event) => {
-          console.log('ENTER', event.target.id)
-          setShowArticle(event.target.id)
-        }
-      }
-      onMouseLeave={(event) => {
-        console.log('OUT', event.target.id)
-        setShowArticle('')}
-        }
-        >
+      onMouseEnter={(event) => setShowArticle(event.target.id)}
+      onMouseLeave={() => setShowArticle('')}>
       <h3 className={`${showArticle === article.name ? 'show-article' : ''} heading`}>{article.heading}</h3>
       <p className={`${showArticle === article.name ? 'show-article' : ''} content`}>{article.content}</p>
       {article.url &&

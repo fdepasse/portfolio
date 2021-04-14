@@ -8,6 +8,7 @@
     height: 30ch;
     max-width: 30ch;
 
+
     h3 {
       background-color: rgba(0, 0, 0, 0.6);
       color: white;
@@ -24,6 +25,7 @@
       position: relative;
       top: 85.5%;
       margin: 0.5rem 0;
+      z-index: -1;
       opacity: 0;
     }
   }
@@ -34,6 +36,7 @@
     padding: 0 0.5rem;
     position: relative;
     top: 85.5%;
+    z-index: -1;
     opacity: 0;
   }
 
@@ -100,6 +103,8 @@
 
   .show-article {
     top: 0%;
+    opacity: 1;
+    z-index: 0;
     transition: 0.3s ease-in;
   }
 }
@@ -127,6 +132,9 @@
 
   #interests #formula-1 {
     border-bottom-left-radius: 0;
+    h3 {
+      border-bottom-left-radius: 0;
+    }
   }
 
   #interests #cooking {

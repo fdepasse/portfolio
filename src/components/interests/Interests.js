@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import ArticlesInterests from './ArticlesInterests'
 
 function Interests() {
-  const [showArticle, setShowArticle] = useState(false)
+  const [showArticle, setShowArticle] = useState('')
+  console.log(showArticle)
 
   return <section id='interests' className='section'>
     <section className='sub-section'>

@@ -1,97 +1,43 @@
 @import "./utilities";
 
 #mywork {
-  background-color: $off-white;
-  
+  background-color: $dark-grey;
+
+  h2,
+  p,
+  h3 {
+    color: white;
+  }
+
+  h4 {
+    padding: 0 0 0.5rem 0;
+    color: white;
+  }
+
+  #mywork-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project-carousel-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60ch;
+    margin-bottom: 50px;
+  }
+
   #project-desc {
     display: flex;
     flex-direction: column;
-    padding: 2.5rem 0 0 0;
-  }
-
-  #project-tech {
-    padding: 2.5rem 0 0 0;
-    width: 100%;
-    max-width: 60ch;
-
-    h4{
-      padding: 0 0 1rem 0;
-    }
-  }
-
-  #project-tech-list {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 60ch;
-    padding: 0.5rem 0 0 0;
-    background-color: $dark-grey;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
-    figure {
-      text-align: center;
-      font-size: 1.5rem;
-      padding: 0.5rem;
-      color: white;
-      transition: 0.3s;
-      &:hover{
-        color: $orange;
-      }
-    }
-
-    figcaption {
-      font-size: 0.8rem;
-    }
-  }
-
-  #project-links {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin: 0.5rem 0 0 0;
-    width: 100%;
-    max-width: 60ch;
-  }
-
-  #project-links-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    align-self: center;
-
-    a {
-      text-align: center;
-      text-decoration: none;
-      color:white;
-      font-size: 1.5rem;
-      padding: 0.5rem 1rem;
-      transition: 0.3s;
-      &:hover{
-        color: $orange;
-      }
-
-    }
-
-    figcaption {
-      font-size: 0.8rem;
-    }
+    margin-bottom: 30px;
   }
 
   #project-carousel {
-    padding: 2.5rem 0 0 0;
-
     img {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      border: $light-grey solid 1px;
       width: 100%;
-      max-width: 60ch;
     }
 
     h4 {
@@ -106,10 +52,14 @@
     width: 100%;
     padding: 1rem 0 0 0;
     font-size: 0.9rem;
+
+    div {
+      color: white;
+    }
   }
 
   .arrow {
-    border: solid black;
+    border: solid white;
     border-width: 0 0.2em 0.2em 0;
     display: inline-block;
     padding: 0.2em;
@@ -121,5 +71,107 @@
 
   .right {
     transform: rotate(-45deg);
+  }
+
+  #tech-links-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60ch;
+  }
+
+  #project-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  #project-tech-list {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 60ch;
+    padding: 0.5rem 0 0 0;
+    border: solid 1.5px $orange;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    figure {
+      flex: 1 1 0;
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      color: white;
+      transition: 0.3s;
+    }
+
+    figcaption {
+      font-size: 0.8rem;
+    }
+  }
+
+  #project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project-links-nav {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 60ch;
+    padding: 0.5rem 0 0 0;
+    border: solid 1.5px $orange;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      transition: 0.3s;
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    figcaption {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #mywork #mywork-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #mywork #project-carousel-section {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  #mywork #tech-links-section {
+    width: 40%;
   }
 }

@@ -6,7 +6,7 @@ import { SiHtml5, SiCss3, SiJavascript, SiSass, SiNodeDotJs, SiPython, SiFlask, 
 import profile from '../../content/images/profile-picture.jpg'
 import { RiHistoryLine, RiCodeSSlashLine } from 'react-icons/ri'
 import { FaForward } from 'react-icons/fa'
-import { ImBook } from 'react-icons/im'
+import { GoSearch } from 'react-icons/go'
 const Express = () => <i className="devicon-express-original"></i>
 
 
@@ -34,7 +34,7 @@ export const aboutMe = [
   {
     heading: 'Love Learning',
     name: 'love-learning',
-    image: <ImBook />,
+    image: <GoSearch />,
     content: 'For this website, I didn’t  use a styling framework  so I could challenge my new skills. I don’t like to leave  black boxes in my learning and seek to understand the why. I read newsletters and browse tutorials to keep up with trends and implement new features on my projects.'
   },
   {

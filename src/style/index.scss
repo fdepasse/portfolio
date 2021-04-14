@@ -46,7 +46,7 @@ body {
   font-size: 1.9rem;
   max-width: 60ch;
   color: black;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   &:after {
     content: "";
     display: block;
@@ -62,6 +62,7 @@ body {
   color: black;
   line-height: 150%;
   max-width: 60ch;
+  margin-bottom: 0.5rem;
 }
 
 .sub-heading {

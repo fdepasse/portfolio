@@ -3,8 +3,9 @@ import { SiGithub } from 'react-icons/si'
 import { TiLinkOutline } from 'react-icons/ti'
 
 
-function ProjectLinks({ project, swipeRight, swipeLeft }) {
-  return <div id='project-links' role='navigation' className={`${swipeRight ? 'swipe-right' : ''} ${swipeLeft ? 'swipe-left' : ''}`}>
+function ProjectLinks({ project }) {
+  return <div id='project-links' role='navigation'>
+    <h4>Links</h4>
     <nav id='project-links-nav' >
       <a href={project.url} target='blank'>
         <figure>

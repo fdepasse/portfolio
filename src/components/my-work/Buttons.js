@@ -8,7 +8,7 @@ function displayProject(handleClick, setProject) {
   setProject(projectClicked)
 }
 
-export function PreviousButton({ setProject, slide, setSlide, setSwipeLeft }) {
+export function PreviousButton({ setProject, slide, setSlide }) {
 
   function handleClick() {
     let newSlide = ''
@@ -21,10 +21,7 @@ export function PreviousButton({ setProject, slide, setSlide, setSwipeLeft }) {
     return newSlide
   }
 
-  return <div role='button' onClick={() => {
-    displayProject(handleClick, setProject)
-    setSwipeLeft(true)
-  }}>
+  return <div role='button' onClick={() => displayProject(handleClick, setProject)}>
     <span>
       <i className='arrow left'></i>
     </span>
@@ -33,7 +30,7 @@ export function PreviousButton({ setProject, slide, setSlide, setSwipeLeft }) {
 }
 
 
-export function NextButton({ setProject, slide, setSlide, setSwipeRight }) {
+export function NextButton({ setProject, slide, setSlide }) {
 
   function handleClick() {
     let newSlide = ''
@@ -46,10 +43,7 @@ export function NextButton({ setProject, slide, setSlide, setSwipeRight }) {
     return newSlide
   }
 
-  return <div role='button' onClick={() => {
-    displayProject(handleClick, setProject)
-    setSwipeRight(true)
-  }}>
+  return <div role='button' onClick={() => displayProject(handleClick, setProject)}>
     Next
     <span>
       <i className='arrow right'></i>

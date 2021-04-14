@@ -102,30 +102,6 @@ body {
   }
 }
 
-.swipe-right {
-  animation: swipe-right 0.55s ease-in;
-  @keyframes swipe-right {
-    0% {
-      transform: translateX(100vw);
-    }
-    100% {
-      transform: translateX(0vw);
-    }
-  }
-}
-
-.swipe-left {
-  animation: swipe-left 0.55s ease-in;
-  @keyframes swipe-left {
-    0% {
-      transform: translateX(-100vw);
-    }
-    100% {
-      transform: translateX(0vw);
-    }
-  }
-}
-
 @media only screen and (min-width: 768px){
   :root{
     font-size: 110%;

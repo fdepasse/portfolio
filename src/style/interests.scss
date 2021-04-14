@@ -1,27 +1,48 @@
 @import "./utilities";
 
 #interests {
-
   article {
     display: flex;
     flex-direction: column;
-    padding: 2.5rem 0 0 0;
-  }
+    border: solid 1.5px $orange;
+    height: 30ch;
+    max-width: 30ch;
 
-  h3 {
-    padding: 0.5rem 0 0 0;
+    h3 {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 0.5rem;
+      position: relative;
+      top: 85.5%;
+      margin: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 0.9rem;
+      padding: 0 0.5rem;
+      position: relative;
+      top: 85.5%;
+      margin: 0.5rem 0;
+      opacity: 0;
+    }
   }
 
   a {
     text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    position: relative;
+    top: 85.5%;
+    opacity: 0;
   }
 
   .interest-url {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    font-size: 1.5rem;
-    color: $dark-grey;
+    font-size: 1.2rem;
+    color: white;
     transition: 0.3s;
     &:hover {
       color: $orange;
@@ -29,39 +50,117 @@
 
     figcaption {
       @extend %bold-font;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
+  }
+
+  #football {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/football.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 10px;
+  }
+
+  #running {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/running.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #nike {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/nike.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #travelling {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/travelling.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #cooking {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/cooking.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #formula-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/formula-1.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    h3 {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+
+  .show-article {
+    top: 0%;
+    transition: 0.3s ease-in;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  #interests {
-    .container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: center;
-      align-items: flex-start;
-    }
+  #interests #articles-interests {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 90ch;
+  }
 
-    article {
-      width: 50%;
-      &:nth-child(odd){
-      padding-right: 5%;
-      }
-      &:nth-child(even){
-        padding-left: 5%;
-        }
+  #interests #football {
+    border-top-right-radius: 0;
+    h3 {
+      border-top-right-radius: 0;
     }
+  }
 
+  #interests #running {
+    border-top-right-radius: 10px;
+  }
+
+  #interests #formula-1 {
+    border-bottom-left-radius: 0;
+  }
+
+  #interests #cooking {
+    border-bottom-left-radius: 10px;
+    h3 {
+      border-bottom-left-radius: 10px;
+    }
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  #interests {
-    #interests-sub-section {
-      width: 70%;
+@media only screen and (min-width: 1077px) {
+  #interests #running {
+    border-top-right-radius: 0;
+    h3 {
+      border-top-right-radius: 0;
+    }
+  }
+
+  #interests #nike {
+    border-top-right-radius: 10px;
+  }
+
+  #interests #cooking {
+    border-bottom-left-radius: 0;
+    h3 {
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  #interests #travelling {
+    border-bottom-left-radius: 10px;
+
+    h3 {
+      border-bottom-left-radius: 10px;
     }
   }
 }

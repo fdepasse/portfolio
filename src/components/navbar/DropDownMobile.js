@@ -2,7 +2,7 @@ import React from 'react'
 
 function DropDownMobile({ menu, setMenu }) {
   return <div role='navigation' aria-label='navigation menu' id='mobile-nav'>
-    <h6 onMouseEnter={() => setMenu(!menu)}>MENU
+    <h6 onMouseEnter={() => setMenu(!menu)} onClick={() => setMenu(!menu)}>MENU
     <span><i className={menu ? 'arrow down' : 'arrow right'}></i>
       </span>
     </h6>

@@ -110,3 +110,9 @@
     max-width: 90ch;
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  #interests #articles-interests {
+    margin: 25px 0 25px 0;
+  }
+}

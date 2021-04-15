@@ -176,7 +176,7 @@ export const interests = [
   {
     heading: 'Travelling',
     name: 'travelling',
-    content: 'I was 18 when I first came to the UK for a month internship. The taste for travelling never left me ever since. I have spent 4 unforgettable months in Hong Kong as part of my studies in 2011 where I have developed a love for Asia.',
+    content: 'I was 18 when I first came to the UK for a month internship. From then, the taste for travelling never left me. I spent 4 unforgettable months in Hong Kong as part of my studies in 2011 where I have developed a love for Asia.',
     caption: '',
     url: ''
   },

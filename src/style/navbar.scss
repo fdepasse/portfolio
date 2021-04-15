@@ -39,6 +39,9 @@ header {
     h6 {
       color: white;
       font-size: 1em;
+      &:hover{
+        color: $orange;
+      }
     }
 
     ul {

@@ -10,6 +10,7 @@ import Interests from './interests/Interests';
 
 function App() {
   const [menu, setMenu] = useState(false)
+  console.log(menu)
 
   return <FormspreeProvider project={process.env.PROJECT_ID}>
     <NavBar menu={menu} setMenu={setMenu}/>

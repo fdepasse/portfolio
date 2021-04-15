@@ -81,6 +81,7 @@ header {
 
   a,
   h6 {
+    @extend %bold-font;
     text-decoration: none;
     color: white;
     transition: 0.3s;

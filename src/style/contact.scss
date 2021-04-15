@@ -34,9 +34,14 @@
 
     input[placeholder],
     textarea[placeholder] {
+      @extend %light-font;
       color: white;
       font-size: 1rem;
       padding-left: 0.5rem;
+    }
+
+    textarea[placeholder]{
+      padding-top: 0.5rem;
     }
 
     button {

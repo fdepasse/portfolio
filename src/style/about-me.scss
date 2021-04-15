@@ -36,6 +36,7 @@
     transition: 0.3s;
 
     h5 {
+      @extend %bold-font;
       color: $dark-grey;
       background-color: $orange;
       font-size: 0.7rem;
@@ -67,8 +68,9 @@
     transition: 0.3s;
 
     figcaption {
+      @extend %bold-font;
       padding-top: 0.5rem;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
   }
 

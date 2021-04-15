@@ -8,13 +8,17 @@
   background-size: cover;
 
   h1 {
-    font-size: 1.9rem;
+    @extend %bold-font;
+    font-size: 3rem;
     color: white;
+    text-align: center;
   }
 
   h2 {
-    font-size: 1.5rem;
+    @extend %bold-font;
+    font-size: 2rem;
     color:white;
+    text-align: center;
   }
 
   a {

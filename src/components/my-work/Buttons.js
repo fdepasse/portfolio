@@ -21,12 +21,12 @@ export function PreviousButton({ setProject, slide, setSlide }) {
     return newSlide
   }
 
-  return <div role='button' onClick={() => displayProject(handleClick, setProject)}>
-    <span>
+  return <button onClick={() => displayProject(handleClick, setProject)}>
+    <span id='previous-arrow'>
       <i className='arrow left'></i>
     </span>
     Previous
-  </div>
+  </button>
 }
 
 
@@ -43,10 +43,10 @@ export function NextButton({ setProject, slide, setSlide }) {
     return newSlide
   }
 
-  return <div role='button' onClick={() => displayProject(handleClick, setProject)}>
+  return <button onClick={() => displayProject(handleClick, setProject)}>
     Next
-    <span>
+    <span id='next-arrow'>
       <i className='arrow right'></i>
     </span>
-  </div>
+  </button>
 }

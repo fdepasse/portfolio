@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import DropDownMobile from './DropDownMobile'
 import ContactLinks from './ContactLinks'
 import DesktopMenu from './DesktopMenu'
 
-function NavBar() {
-  const [menu, setMenu] = useState(false)
+function NavBar({ menu, setMenu }) {
 
-  return <header>
+  return <header onMouseEnter={() => setMenu(false)}>
     <nav id='navbar'>
-      <DropDownMobile menu={menu} setMenu={setMenu}/>
-      <DesktopMenu/>
-      <ContactLinks/>
+      <DropDownMobile menu={menu} setMenu={setMenu} />
+      <DesktopMenu />
+      <ContactLinks />
     </nav >
   </header >
 }

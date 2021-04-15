@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FormspreeProvider } from '@formspree/react';
 import Home from './home/Home'
 import AboutMe from './about-me/AboutMe'
@@ -9,9 +9,11 @@ import NavBar from './navbar/NavBar'
 import Interests from './interests/Interests';
 
 function App() {
+  const [menu, setMenu] = useState(false)
+
   return <FormspreeProvider project={process.env.PROJECT_ID}>
-    <NavBar />
-    <main>
+    <NavBar menu={menu} setMenu={setMenu}/>
+    <main onMouseEnter={() => setMenu(false)}>
       <Home />
       <AboutMe />
       <MyWork />

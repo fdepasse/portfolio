@@ -49,17 +49,38 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 1rem 0 0 0;
     font-size: 0.9rem;
 
-    div {
+    button {
+      @extend %bold-font;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      width: 7rem;
+      outline: none;
+      background-color: transparent;
       color: white;
+      border: 0.1rem solid white;
+      transition: 0.3s;
+      &:hover {
+        background-color: white;
+        color: $dark-grey;
+      }
+    }
+
+    #previous-arrow {
+      padding: 0 0.25rem 0 0;
+    }
+
+    #next-arrow{
+      padding: 0 0 0 0.25rem;
     }
   }
 
   .arrow {
-    border: solid white;
+    border: solid $orange;
     border-width: 0 0.2em 0.2em 0;
     display: inline-block;
     padding: 0.2em;

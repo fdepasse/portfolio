@@ -8,7 +8,7 @@ function ArticlesInterests({ showArticle, setShowArticle }) {
     return <article key={article.heading} id={article.name}
       onMouseEnter={(event) => setShowArticle(event.target.id)}
       onMouseLeave={() => setShowArticle('')}>
-      <h3 className={`${showArticle === article.name ? 'show-article' : ''} heading`}>{article.heading}</h3>
+      <h3 className={`${showArticle === article.name ? 'show-article' : ''} heading`} onMouseEnter={() => showArticle !== article.name ? setShowArticle(article.name) : ''}>{article.heading}</h3>
       <p className={`${showArticle === article.name ? 'show-article' : ''} content`}>{article.content}</p>
       {article.url &&
         <a href={article.url} target='blank' className={showArticle === article.name ? 'show-article' : ''}>

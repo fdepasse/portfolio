@@ -9,7 +9,12 @@ function Form() {
     <input id='email' type='email' name='email' placeholder='Your Email' required />
     <ValidationError field='email' prefix='Email' errors={state.errors} />
     <textarea id='message' type='text' name='message' placeholder='Your Message' required />
-    {state.succeeded ? <p className='form-message'> Email sent</p> : <button type='submit' disabled={state.submitting}>Send</button>}
+    {state.succeeded ? 
+    <p className='form-message'> Email sent</p> 
+    : <button type='submit' disabled={state.submitting}>
+      Send
+      <span><i className='arrow right'></i></span>
+      </button>}
   </form>
 }
 

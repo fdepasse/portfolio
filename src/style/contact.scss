@@ -36,10 +36,10 @@
     textarea[placeholder] {
       color: white;
       font-size: 1rem;
+      padding-left: 0.5rem;
     }
 
     button {
-      align-items: flex-start;
       @extend %bold-font;
       font-size: 1rem;
       padding: 0.5rem 0;
@@ -48,12 +48,28 @@
       background-color: transparent;
       color: white;
       border: 0.1rem solid white;
+      transition: 0.3s;
       &:hover {
         background-color: white;
         color: $dark-grey;
       }
     }
 
+    span{
+      padding: 0 0 0 0.25rem;
+    }
+
+    .arrow {
+      border: solid $orange;
+      border-width: 0 0.2em 0.2em 0;
+      display: inline-block;
+      padding: 0.2em;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+    }
+  
     .form-message {
       @extend %bold-font;
       font-size: 1rem;

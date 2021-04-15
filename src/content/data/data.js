@@ -118,10 +118,10 @@ export const skills = [
   {
     id: 'Confident',
     tech: [
-      { name: 'HTML', icon: <SiHtml5 /> },
-      { name: 'CSS', icon: <SiCss3 /> },
       { name: 'JavaScript', icon: <SiJavascript /> },
       { name: 'React', icon: <SiReact /> },
+      { name: 'HTML', icon: <SiHtml5 /> },
+      { name: 'CSS', icon: <SiCss3 /> },
       { name: 'Sass', icon: <SiSass /> },
       { name: 'Node.js', icon: <SiNodeDotJs /> }
     ]
@@ -156,42 +156,42 @@ export const interests = [
     heading: 'Football',
     name: 'football',
     content: 'I started playing when I was 8 years old in my local club. I now play 7 a side every week in North London and am part of the Brixton Hill FC 11 a side team.',
-    caption:'Brixton Hill FC',
-    url:'https://www.instagram.com/brixton_hill_fc/?hl=en'
+    caption: 'Brixton Hill FC',
+    url: 'https://www.instagram.com/brixton_hill_fc/?hl=en'
   },
   {
     heading: 'Running',
     name: 'running',
     content: 'I have been running for 15 years. When I turned 30, I set myself the challenge to run a marathon for the first time. I ended up running 3 that year, raising money for Anna Freud National Centre for Children and Families and crowdfunding for a former colleague in need.',
-    caption:'JustGiving',
-    url:'https://www.justgiving.com/crowdfunding/fabien-depasse'
+    caption: 'JustGiving',
+    url: 'https://www.justgiving.com/crowdfunding/fabien-depasse'
   },
   {
     heading: 'Nike',
     name: 'nike',
     content: 'I have a special affection for Nike. As a sport fan, I have always loved their products: mixing performance, innovation and style. Phil Knight\'s autobiography "Shoe Dog" is very inspiring. One of the best memories I have from the brand remains their football adverts, especially The Secret Tournament.',
-    caption:'The Secret Tournament',
-    url:'https://www.youtube.com/watch?v=vBy4zDLzQ-I'
+    caption: 'The Secret Tournament',
+    url: 'https://www.youtube.com/watch?v=vBy4zDLzQ-I'
   },
   {
     heading: 'Travelling',
     name: 'travelling',
     content: 'I was 18 when I first came to the UK for a month internship. The taste for travelling never left me ever since. I have spent 4 unforgettable months in Hong Kong as part of my studies in 2011 where I have developed a love for Asia.',
-    caption:'',
-    url:''
+    caption: '',
+    url: ''
   },
   {
     heading: 'Cooking',
     name: 'cooking',
     content: 'I find cooking really relaxing and I enjoy sharing meals with friends. I like Asian flavours in particular and, from time to time, take cooking lessons at the School of Wok.',
-    caption:'School of Wok',
-    url:'https://schoolofwok.co.uk/?gclid=CjwKCAjwvMqDBhB8EiwA2iSmPLxZbYtilH-wEoWijAblty-YTxE8shMdbXhvxydIOMquVEldBilPXhoCNxsQAvD_BwE'
+    caption: 'School of Wok',
+    url: 'https://schoolofwok.co.uk/?gclid=CjwKCAjwvMqDBhB8EiwA2iSmPLxZbYtilH-wEoWijAblty-YTxE8shMdbXhvxydIOMquVEldBilPXhoCNxsQAvD_BwE'
   },
   {
     heading: 'Formula 1',
     name: 'formula-1',
-    content: 'I follow Formula 1 closely and like to give a go at sim racing on the official video game. "Drive to Survive" is one of the best sports documentary I watched.',
-    caption:'Drive to Survive',
-    url:'https://www.youtube.com/watch?v=aViLtXEtgqs'
+    content: 'I follow Formula 1 closely. I also like to give sim racing a go and play the official video game. "Drive to Survive" is one of the best sport documentaries I have watched.',
+    caption: 'Drive to Survive',
+    url: 'https://www.youtube.com/watch?v=aViLtXEtgqs'
   }
 ]

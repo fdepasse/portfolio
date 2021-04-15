@@ -131,7 +131,7 @@ header {
     }
 
     li {
-      padding: 0 1rem 0 0;
+      padding: 0 2rem 0 0;
     }
   }
 }
@@ -143,5 +143,11 @@ header {
   }
   header #mobile-nav{
     display: none;
+  }
+
+  header #links {
+    li {
+      padding: 0 0 0 2rem;
+    }
   }
 }

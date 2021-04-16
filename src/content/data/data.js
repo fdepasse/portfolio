@@ -53,7 +53,7 @@ export const projects = [
     name: 'Dreamland Festival',
     details: 'Team Project (3 members) / Project length: 7 days',
     description: 'A full stack mobile application to help attendees to a fictional music festival organising their day. Built with React, Python, Flask, SQLAlchemy, Marshmallow and talking to a PostgreSQL Database. Deployed via Heroku.',
-    approach: 'The project involved Model View Controllers and User Interface planning as a group, using Entity Relationship Diagrams and Wireframe. The backend was built with Python-Flask and integration tests run with Pytest. Once all tests passed, the frontend has been built with React. I specifically worked on building and testing the user model on the backend. On the frontend, I created the live artist and reaction button features.',
+    approach: 'The project involved Model View Controllers and User Interface planning as a group, using Entity Relationship Diagrams and Wireframe. The backend was built with Python-Flask and we run integration tests with Pytest. Once all tests passed, the frontend has been built with React. I specifically worked on building and testing the user model on the backend. On the frontend, I created the live artist and reaction button features.',
     url: 'http://dreamland-festival.herokuapp.com/',
     github: 'https://github.com/fdepasse/dreamland-festival/blob/main/README.md',
     tech: [
@@ -72,7 +72,7 @@ export const projects = [
     name: 'Hack A Snack',
     details: 'Team Project (4 members) / Project length: 9 days',
     description: 'A full stack application for users to browse, search, filter, post, review and save recipes. Built with React, Node.js, Express, Mongoose and talking to a NoSQL MongoDB database. Deployed via Heroku.',
-    approach: 'We built our own recipe database using a public API to seed it. We worked as a team to plan in depth. using Entity Relationship Diagrams and Wireframe. We then built the backend and run integration tests on it. Once all tests passed, we created our React components and finally styled our app. On the backend, I specifically worked on the review and search recipe functionalities. On the frontend, I built the search, filter and rating features.',
+    approach: 'This project involved building our own recipe database using a public API to seed it. The Models, Views and Controllers for the backend have been planned in details and tested using Chai, Mocha and Supertest. The frontend has been built using React. On the backend, I specifically worked on the review and search recipe functionalities. On the frontend, I built the search, filter and rating features.',
     url: 'https://hackasnack.herokuapp.com/',
     github: 'https://github.com/fdepasse/hack-a-snack/blob/main/README.md',
     tech: [
@@ -90,7 +90,7 @@ export const projects = [
     name: 'The Breaking Bad Project',
     details: 'Pair Programming / Project length: 2 days',
     description: 'A front end application consuming a public API for visitors to browse all things \'Breaking Bad\'. Built with React and implementing AJAX principles. Deployed via GitHub.',
-    approach: 'The project involved Model View Controllers and User Interface planning as a group, using Entity Relationship Diagrams and Wireframe. We then built the backend and run integration tests on it. Once happy with it, we went on to creating our React components and finally styling. I specifically worked on building and testing the user model on the backend. On the frontend, I created the live artist and reaction button features.',
+    approach: 'The project was my first experience working with React, Public APIs and as a group. After spending time, looking at APIs and their endpoints, we decided on our app features and built our React components. We used Axios to manage our requests to the server. I specifically work on the "Character" page, the homepage and the navigation bar. Programming as a group for the first time was a great experience.',
     url: 'https://fdepasse.github.io/the-breaking-bad-project/',
     github: 'https://github.com/fdepasse/the-breaking-bad-project/blob/main/README.md',
     tech: [
@@ -105,8 +105,8 @@ export const projects = [
     id: 4,
     name: 'Pac-Man Thriller',
     details: 'Solo Project / Project length: 7 days',
-    description: 'A Michael Jackson\'s Thriller take on the classic Pac-Man game. Built with HTML, CSS and Vanilla JavaScript',
-    approach: 'The project involved Model View Controllers and User Interface planning as a group, using Entity Relationship Diagrams and Wireframe. We then built the backend and run integration tests on it. Once all tests passed, we created our React components and finally styled our app. I specifically worked on building and testing the user model on the backend. On the frontend, I created the live artist and reaction button features.',
+    description: 'A Michael Jackson\'s Thriller take on the classic Pac-Man game. Built with HTML, CSS and Vanilla JavaScript. Deployed via GitHub.',
+    approach: 'This was my first ever project as a developer. It was a complex problem to solve with lots of moving parts. I broke down the game into smaller problems and organise my work to tackle them one at a time. It was a great way to strengthen my fundamentals in HTML, CSS, JavaScript and DOM Manipulation. It also made me appreciate the principles that libraries, such as React,  rely on.',
     url: 'https://fdepasse.github.io/pacman-thriller/',
     github: 'https://github.com/fdepasse/pacman-thriller/blob/main/README.md',
     tech: [

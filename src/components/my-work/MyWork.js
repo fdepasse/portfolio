@@ -4,6 +4,7 @@ import Carousel from './Carousel'
 import Project from './Project'
 import Tech from './Tech'
 import ProjectLinks from './ProjectLinks'
+import Approach from './Approach'
 
 function MyWork() {
   const [project, setProject] = useState(defaultProject)
@@ -18,6 +19,7 @@ function MyWork() {
           <Carousel project={project} setProject={setProject} slide={slide} setSlide={setSlide} />
         </section>
         <section id='tech-links-section'>
+          <Approach project={project}/>
           <Tech project={project} />
           <ProjectLinks project={project} />
         </section>

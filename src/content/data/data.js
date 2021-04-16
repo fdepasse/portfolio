@@ -23,16 +23,16 @@ export const aboutMe = [
     heading: 'Background',
     name: 'background',
     image: <RiHistoryLine />,
-    content: 'I’ve spent the last 8 years as a Senior Data Analyst for a large company managing 1000+ SKU’s . Having optimised and improved our reporting tools to max efficiency, I sought to challenge myself. My curiosity took me to free online coding and in January 2021 I undertook a 3 month Software Engineering immersive course.'
+    content: 'I’ve spent the last 8 years as a Senior Data Analyst for a large company managing 1000+ SKU’s . Having optimised and improved our reporting tools to max efficiency, I sought to challenge myself. My curiosity took me to complete free online coding courses and in January 2021, I undertook a 3 month Software Engineering immersive course.'
   },
   {
     heading: 'Code',
     name: 'code',
     image: <RiCodeSSlashLine />,
-    content: 'I love logic, it’s at the core of how I work.  Whilst I particularly gravitate to Javascript and Python, I take an overall approach to ensure frontend and backend work seamlessly together.'
+    content: 'I love logic, it’s at the core of how I work.  Whilst I particularly gravitate to JavaScript and Python, I take an overall approach to ensure frontend and backend work seamlessly together.'
   },
   {
-    heading: 'Love Learning',
+    heading: 'Love of Learning',
     name: 'love-learning',
     image: <GoSearch />,
     content: 'For this website, I didn’t  use a styling framework  so I could challenge my new skills. I don’t like to leave  black boxes in my learning and seek to understand the why. I read newsletters and browse tutorials to keep up with trends and implement new features on my projects.'
@@ -51,7 +51,9 @@ export const projects = [
   {
     id: 1,
     name: 'Dreamland Festival',
-    description: 'A full stack mobile application to help attendees to a fictional music festival organising their day.',
+    details: 'Team Project (3 members) / Project length: 7 days',
+    description: 'A full stack mobile application to help attendees to a fictional music festival organising their day. Built with React, Python, Flask, SQLAlchemy, Marshmallow and talking to a PostgreSQL Database. Deployed via Heroku.',
+    approach: 'The project involved Model View Controllers and User Interface planning as a group, using Entity Relationship Diagrams and Wireframe. The backend was built with Python-Flask and integration tests run with Pytest. Once all tests passed, the frontend has been built with React. I specifically worked on building and testing the user model on the backend. On the frontend, I created the live artist and reaction button features.',
     url: 'http://dreamland-festival.herokuapp.com/',
     github: 'https://github.com/fdepasse/dreamland-festival/blob/main/README.md',
     tech: [
@@ -68,7 +70,9 @@ export const projects = [
   {
     id: 2,
     name: 'Hack A Snack',
-    description: 'A full stack application for users to browse, search, filter, post, review and save recipes.',
+    details: 'Team Project (4 members) / Project length: 9 days',
+    description: 'A full stack application for users to browse, search, filter, post, review and save recipes. Built with React, Node.js, Express, Mongoose and talking to a NoSQL MongoDB database. Deployed via Heroku.',
+    approach: 'We built our own recipe database using a public API to seed it. We worked as a team to plan in depth. using Entity Relationship Diagrams and Wireframe. We then built the backend and run integration tests on it. Once all tests passed, we created our React components and finally styled our app. On the backend, I specifically worked on the review and search recipe functionalities. On the frontend, I built the search, filter and rating features.',
     url: 'https://hackasnack.herokuapp.com/',
     github: 'https://github.com/fdepasse/hack-a-snack/blob/main/README.md',
     tech: [
@@ -84,7 +88,9 @@ export const projects = [
   {
     id: 3,
     name: 'The Breaking Bad Project',
-    description: 'A front end application consuming a public API for visitors to browse all things \'Breaking Bad\'.',
+    details: 'Pair Programming / Project length: 2 days',
+    description: 'A front end application consuming a public API for visitors to browse all things \'Breaking Bad\'. Built with React and implementing AJAX principles. Deployed via GitHub.',
+    approach: 'The project involved Model View Controllers and User Interface planning as a group, using Entity Relationship Diagrams and Wireframe. We then built the backend and run integration tests on it. Once happy with it, we went on to creating our React components and finally styling. I specifically worked on building and testing the user model on the backend. On the frontend, I created the live artist and reaction button features.',
     url: 'https://fdepasse.github.io/the-breaking-bad-project/',
     github: 'https://github.com/fdepasse/the-breaking-bad-project/blob/main/README.md',
     tech: [
@@ -98,7 +104,9 @@ export const projects = [
   {
     id: 4,
     name: 'Pac-Man Thriller',
-    description: 'A Michael Jackson\'s Thriller take on the classic Pac-Man game, powered by Vanilla JavaScript.',
+    details: 'Solo Project / Project length: 7 days',
+    description: 'A Michael Jackson\'s Thriller take on the classic Pac-Man game. Built with HTML, CSS and Vanilla JavaScript',
+    approach: 'The project involved Model View Controllers and User Interface planning as a group, using Entity Relationship Diagrams and Wireframe. We then built the backend and run integration tests on it. Once all tests passed, we created our React components and finally styled our app. I specifically worked on building and testing the user model on the backend. On the frontend, I created the live artist and reaction button features.',
     url: 'https://fdepasse.github.io/pacman-thriller/',
     github: 'https://github.com/fdepasse/pacman-thriller/blob/main/README.md',
     tech: [

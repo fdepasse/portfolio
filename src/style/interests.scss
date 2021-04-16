@@ -18,7 +18,7 @@
     }
 
     p {
-      color: white;
+      color: rgba(255, 255, 255, 0.8);
       font-size: 0.85rem;
       padding: 0 0.5rem;
       position: relative;
@@ -57,19 +57,19 @@
   }
 
   #football {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/football.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../content/images/football.jpeg");
     background-position: center;
     background-size: cover;
   }
 
   #running {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/running.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../content/images/running.jpeg");
     background-position: center;
     background-size: cover;
   }
 
   #nike {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/nike.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../content/images/nike.jpeg");
     background-position: center;
     background-size: cover;
   }
@@ -81,13 +81,13 @@
   }
 
   #cooking {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/cooking.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../content/images/cooking.jpeg");
     background-position: center;
     background-size: cover;
   }
 
   #formula-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/images/formula-1.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../content/images/formula-1.jpeg");
     background-position: center;
     background-size: cover;
   }
